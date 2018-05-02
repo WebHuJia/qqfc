@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ飞车》端游是腾讯首款在线突破300万的自研大作，迄今累计超过4.5亿注册用户。两年来，《QQ飞车》端游研发团队成功让《QQ飞车》手游完美还原了端游的大部分操作技巧，上手容易之余，同时又有足够的操作深度，力求给玩家提供一个原汁原味却又充满诚意的飞车手游！" />
+    <meta name="Keywords" content="QQ飞车手游,飞车手游,QQspeed,张杰，歌手张杰，谢娜，，fast,QQ飞车音乐总监，漂移玩音乐，星星，恒星，璀璨星空，QQkart,SSC超级联赛,赛车游戏,赛车,卡丁车,休闲区,同城交友,跑跑,跑跑卡丁车,最好玩,时尚,时尚赛车,剃刀,针尖,针尖杯,腾讯游戏,QQ游戏,视频,WCG,赛道视频,沉睡森林,海滨发夹,海洋公园,漂移,飞车宝贝,宝贝,车队,子弹"/>
+    <title> Q飞手游携手张杰，一起搞事情-QQ飞车手游唯一官方正版-极速漂移一触即发</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <!-- 设计：cp  | 重构：cp | 创建：2017/12/4  -->
+    <style>
+        *{outline: none;}
+        body,button,input,select,textarea{font:12px/1.5 tahoma,'\5b8b\4f53',sans-serif}
+        body{font-family: "Microsoft YaHei";min-width:1200px;overflow: hidden}
+        /*body{padding-top: 42px;}*/
+        h1,h2,h3,h4,h5,h6{font-size:100%}
+        em,b{font-style:normal}
+        a{text-decoration:none}
+        a:hover{text-decoration:none;}
+        img{border:0}
+        button,input,select,textarea{font-size:100%;outline:none}
+        table{border-collapse:collapse;border-spacing:0}
+        td,th,ul,ol{padding:0}
+        ul li{list-style: none;}
+        i{font-style: normal;}
+        .clear:after,.clearfix:after{clear:both;content:".";height:0;display:block;visibility:hidden;}
+        .clear,.clearfix{*zoom:1;}
+        html, body {position: relative; height:100%;background-color: #051a3d;}
+        .index-wrap {transition:transform ease 1s;}
+        /*标题*/
+        .bt{width: 457px;height: 70px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -18px -223px;margin: 104px auto 54px;}
+        /*首页*/
+        .wrap{width: 1200px;margin: 0 auto;}
+        .sec1 h1{z-index: 2;position: relative;}
+        .sec1 h1 a{display:block;text-indent: -999999px;width: 148px; height: 98px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/logo.png) no-repeat bottom;}
+        .sec1 ul{float: right;position: relative;z-index: 2;width: 693px;height: 44px;margin-top: -80px;}
+        .sec1 ul li a{font-size: 16px;color:#fff;font-weight: bold;text-align: center;display: block;text-decoration: none;margin-top: 12px;}
+        .sec1{background:#04143e url(//game.gtimg.cn/images/speedm/zhangjie/pc/kv_1.jpg) no-repeat 50% -37px;}
+        .sec1 h2{height:782px;text-indent:-999999px;}
+        .sec1 p{text-indent:-999999px;}
+        .sec1 li{cursor: pointer; display: inline-block; width: 182px; height: 50px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -345px -305px;margin-left: -12px;}
+        .sec1 li.on{background-position: -152px -305px;}
+        .sec1 li:hover{background-position: -152px -305px;}
+        .sec1 .black{position: absolute;left: 0;top:0; width: 100%;height: 80px;text-indent: -99999px;background: rgba(0,0,0,0.5);z-index: 1;}
+        .person{height: 824px;margin: 0 auto;text-indent: -9999px;position: relative;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/kv_2.jpg) no-repeat 50% bottom;}
+        .person .wrapp{width: 1200px;position: relative;margin: 0 auto;}
+        .player{display: block;width: 116px;height: 116px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -548px -263px;position: absolute;top: 380px;right: 230px;text-indent: -9999px}
+        .arrow{display: block;width: 58px;height: 38px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -687px -315px;position: absolute;top: 755px;right: 570px;text-indent: -9999px}
+        /*张杰神秘来信*/
+        .bts{width: 457px;height: 70px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -7px -426px;margin: 104px auto 54px;}
+        h3 .smlx{display: inline-block;width: 314px;height: 43px; margin: 14px 75px; background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -10px -376px;text-indent: -9999px;}
+        .sec2{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/smlx.jpg) no-repeat 50% 0;padding-top: 1px;}
+        .envelope{position: relative; width: 1081px;height: 636px;margin: 117px auto 0;}
+        .progress{width:97%;height: 13px;border: 4px solid #8ec3e8;border-radius: 20px;padding: 5px}
+        .progress .progress_bar{width: 0%;height: 13px;background-color: #ffe351;border-radius: 20px;}
+        .message{width: 1078px;height: 188px;margin: 0 auto;padding-top: 5px;}
+        .message li{margin-left: 94px; display: inline-block;width: 135px;height: 188px;text-align: center;}
+        .message li.first{margin-left: 0;}
+        .message strong,.message i{display: block;color: #fff;}
+        .message .on strong,.message .on i{color: #ffe351; }
+        .message strong{font-size: 22px;}
+        .message i{font-size: 14px;font-weight:bold;}
+        .message b{display: block;margin: 0 auto; width: 9px;height: 9px;background-color: #fff;border-radius: 50%;}
+        .message .on b{background-color: #ffe351;}
+        .message a{width: 100%;height: 122px;display: block;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/feiche.png) no-repeat 50% 80%;}
+        .message .on a{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/open.png) no-repeat 50% 0;}
+        .envelope .yy{display: block;width: 245px;height: 78px;margin: 47px auto 0;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -798px -268px;font-size: 26px;color: #f96000;text-align: center;line-height: 68px;}
+        .envelope .yy:hover{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -502px -620px;}
+        .envelope .xinxin{font-weight: bold;font-size: 24px;color: #fff;text-align: center;}
+        .envelope .xinxin span{color: #ffe351;}
+        .envelope p{font-size: 22px;color: #fff;text-align: center;}
+        .envelope .first_p{margin-top: 100px;}
+        .arrows{top: 560px;left: 500px;}
+        /*神秘线索*/
+        .arroww{top:750px;left: 670px;}
+        .sec3{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/smxs.jpg) no-repeat 50% 0;padding-top: 1px;}
+        .sec3_content{position: relative; width: 1389px;height: 818px;margin: 100px auto 0;}
+        .sec3_content span,.sec3_content a{position: absolute; color: #fff;font-size: 16px;}
+        .sec3_content span b{font-weight: normal;position: absolute;}
+        .sec3_content .pic_1{width:535px;height: 594px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/book.png) no-repeat 50% 0;left: -50px;top: 190px;}
+        .sec3_content .pic_2{width:718px;height: 629px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/mail.png) no-repeat 50% 0;left: 330px;top:0px;}
+        .sec3_content .pic_3{width:412px;height: 549px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/phone.png) no-repeat 50% 0;top: 270px;right: 59px;}
+        .sec3_content .pic_4{width:411px;height: 357px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/picture.png) no-repeat 50% 0;top: 341px;right: 315px;}
+        .sec3_content .pic_5{width:356px;height: 264px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/tape.png) no-repeat 50% 0;left: 390px;top: 443px;}
+        .sec3_content .hint_1{width:190px;height:125px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -184px -752px;left: 110px;top:148px;}
+        .sec3_content .hint_2{width:178px;height:64px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat 1px -741px;left: 366px;top:21px;}
+        .sec3_content .hint_3{width:129px;height:118px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat  -906px -403px;right: 185px;top:180px;}
+        .sec3_content .hint_4{width: 182px;height: 88px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -674px -357px;left: 752px;top:635px;}
+        .sec3_content .hint_5{width:182px;height:69px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -492px -376px;left: 425px;top:675px;}
+        .sec3_content .hint_1.on{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -685px -456px; color: #000;}
+        .sec3_content .hint_2.on{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -489px -455px; color: #000;}
+        .sec3_content .hint_3.on{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -400px -710px; color: #000;}
+        .sec3_content .hint_4.on{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -184px -666px; color: #000;}
+        .sec3_content .hint_5.on{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat 0 -672px; color: #000;}
+        .sec3_content .hint_1 b{text-align: center;left: 73px;top:6px;display: block;width: 112px;height: 24px;}
+        .sec3_content .hint_2 b{text-align: center;left: 65px;top:9px;display: block;width: 112px;height: 24px;}
+        .sec3_content .hint_3 b{text-align: center;left: 13px;top:6px;display: block;width: 112px;height: 24px;}
+        .sec3_content .hint_4 b{text-align: center;left: 67px;top:52px;display: block;width: 112px;height: 24px;}
+        .sec3_content .hint_5 b{text-align: center;left: 61px;top:35px;display: block;width: 112px;height: 24px;}
+        /*揭秘悬念*/
+        .btm{width: 467px;height: 83px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -2px -580px;margin: 104px auto 42px;}
+         #huoqu{font-size: 18px;color: #fff;}
+        h3 .xnjm{display: inline-block;width: 221px;height: 42px; margin: 21px 133px; background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -236px -511px;text-indent: -9999px;}
+        .sec4{height: 960px; background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/xnjm.jpg) no-repeat 50% 0; padding-top: 1px;}
+        .video_content{width: 1151px;height:501px;margin: 0 auto;}
+        .tx_video{width: 850px;height: 499px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/video-frame.png) no-repeat 50% 0;}
+        .tx_video .video{width: 95%;height: 90%;background-color: #000;margin:25px auto;}
+        .discuss{position: relative; width: 289px;height: 499px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/quiz.png) no-repeat 50% 0;}
+        .discuss .beauty{position: absolute;width:113px;height: 114px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/beauty.png) no-repeat 50% 0;left: 85px;top: -90px;text-indent: -9999px;}
+        .discuss .piao{display:block;margin-top: 75px; font-size: 14px;text-align: center;}
+        .discuss i{display: block;font-size: 12px;color: #acbcff;text-align: center;margin-top: 5px;}
+        .discuss h5{font-size: 18px;font-weight: bold;color: #ffe351;text-align: center;margin-top: 40px;}
+        .discuss .last{margin-top: 10px;font-size: 14px;}
+        .confession{width: 248px;height: 185px;margin: 40px 0 0 11px;text-align: left;}
+        .confession li{font-size: 12px;color: #fff;margin-bottom: 12px;}
+        .confession li .align{padding-left: 8px; text-align: left;margin-top: 0;}
+        .confession span{display:inline-block;width: 8px;height: 8px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -1082px -475px; }
+        .discuss .fans{display: block;width: 176px;height: 54px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -879px -350px;margin: 10px auto;text-align: center;line-height: 50px;font-size: 18px;color: #fb6200;font-weight: bold;}
+        .discuss .fans:hover{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -777px -630px;}
+        /*星闻专区*/
+        .sec5{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/xwbg.jpg) no-repeat 50% 0; padding-top: 1px;}
+        h3 .xwzq{display: inline-block;width: 181px;height: 47px; margin: 14px 139px; background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -499px -216px;text-indent: -9999px;}
+        /*contents*/
+        .contents{position: relative; width: 1104px; height: 516px;margin:0 auto 40px;}
+        .contents li{text-align: left; cursor: pointer; width: 1104px; height: 50px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -10px -146px;margin: 18px 0;}
+        .contents .list1{width: 1104px;height: 120px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -10px -10px;}
+        .left{float: left;}
+        .right{float: right;}
+        .list1 .left{position: relative; width: 481px;height: 100px;margin: 10px 0 10px 50px;}
+        .list1 .user{text-align: center; line-height: 180%; font-size: 44px;font-weight: bold;color: #6979e5; box-sizing: border-box; display: block; width: 100px; height: 100px;border: 2px solid #303f9d;background: #0d1a58;border-radius: 50%;}
+        .list1 em{width: 100px; text-align: center; margin-top: -34px;font-size: 12px;color: #6979e5;display: block;}
+        .list1 i{position: absolute; font-size: 16px;color: #fff;display: block;left: 115px;top:19px;}
+        .list1 strong{position: absolute; font-size:26px;color:#fff; left: 115px;top:48px;}
+        .list1 .right{width: 146px;height: 100px;margin: 10px 50px 10px 0;}
+        .right p{color: #6979e5;font-size: 16px;}
+        .right .top{width: 161px; height: 25px;line-height: 25px;margin: 19px 0 15px;}
+        .right .bottom{width: 161px;height: 28px;line-height: 28px;}
+        .right .one{display: inline-block;width: 21px;height: 25px;background:url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -737px -213px;float: left;margin-right: 7px;}
+        .right .two{display: inline-block;width: 21px;height: 28px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -10px -316px;float: left;margin-right: 7px;}
+        .contents li .txt{font-size: 16px;color: #fff;margin: 14px 0 12px 50px;width: 700px;height:24px;overflow: hidden;}
+        .contents li .time{font-size: 16px;color: #6979e5;margin: 14px 50px 12px 0;}
+        .contents li:hover .txt,.contents li:hover .time{color: #fdd65a;}
+        /*page*/
+        .page{width: 1104px;height: 175px;margin: 0 auto;}
+        .page li{vertical-align: top; box-sizing: border-box; display: inline-block;font-size: 16px;color: #fff;width: 50px;height: 50px;text-align: center;line-height: 50px;background-color: #181c85;border: 1px solid #3a55c6;}
+        .page .last{background:#181c85 url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -26px -307px;}
+        .page .spot{background-color: transparent;border: none;}
+        .page li:hover{color: #fdd65a;border-color:#fdd65a;}
+        #pargination{position: fixed;right:15%;top:50%;z-index:99;}
+        #pargination span{position: relative;}
+        #pargination span a{text-decoration: none; position: absolute;width: 64px;height: 22px; font-size: 16px;color: #fff;right: -83px;top:-3px;}
+        #pargination em{float: right;}
+        #pargination span.swiper-pagination-bullet-active b{width: 20px;height: 20px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -697px -216px;}
+        #pargination span.swiper-pagination-bullet-active a{color: #fdd65a;}
+        #pargination b{display: inline-block;width: 20px;height: 20px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -773px -212px;}
+        #pargination i{display:block;width: 3px;height: 3px;background: #fff;border-radius: 50%;margin:8px auto;}
+        #pargination .swiper-pagination-bullet{width:19px;height:58px;display: block;border-radius:0;background:none;opacity: 1;}
+        /*游戏特色*/
+        h3 .yxts{display: inline-block;width: 181px;height: 47px; margin: 14px 139px; background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -797px -218px;text-indent: -9999px;}
+        .sec6{height: 1375px; background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/yxbg.jpg) no-repeat 50% 0;padding-top: 1px;}
+        .fbox{width: 1003px; height: 240px; margin: 150px auto;}
+        .code{width: 114%; height: 187px; }
+        .code li{width: 150px;height: 150px; box-sizing: border-box;margin-right: 132px;background-color: #072e6b;display: inline-block;border: 5px solid #0b98f2;vertical-align: text-top;}
+        .code p{font-size: 16px; color:#8d9adb;width: 146px; height:34px;text-align: center;margin-top: 20px;}
+        .code .one{background:#072e6b url(//game.gtimg.cn/images/speedm/zhangjie/pc/pc3.png) no-repeat 50% 50%;}
+        .code a{display: block;width: 100%; height: 100%;text-decoration: none;}
+        .code .second{background:#072e6b url(//game.gtimg.cn/images/speedm/zhangjie/pc/clan.png) no-repeat 50% 50%;}
+        .code .three{background: #072e6b url(//game.gtimg.cn/images/speedm/zhangjie/pc/pc2.png) no-repeat 50% 50%;}
+        .code .four{background: #072e6b url(//game.gtimg.cn/images/speedm/zhangjie/pc/pc1.png) no-repeat 50% 50%;}
+        /*foot-info*/
+        .footer{ background-color: #151829}
+        .footer_wp:after{content:'\20';display:block;height:0;clear:both;}
+        .footer_wp{*zoom:1;}
+        .footer,.footer a,.footer_tips dd{color:#505262; }
+        .footer a:hover{color:#A5A2A5; }
+        .footer{padding-top:20px;}
+        .footer_tips{/* margin-top: 20px; *//* line-height: 1.8; *//* border: 1px solid #fff; *//* color: #fff; */position: relative;z-index: 99999;/* background: #fff; */}
+        .footer_tips dt,.footer_tips dd{font-family:\5FAE\8F6F\96C5\9ED1;}
+        .footer_tips dd li{padding-right: 7px;float:left;white-space: nowrap;}
+        .footer_wp{margin:0 auto;width:1000px;padding:0 0 30px;}
+        .footer_links_area{float: right;/* padding-left: 50px; */line-height:1.8;margin-top: 10px;}
+        .footer_links_area span{padding: 0 6px}
+        .fd-line{display:inline-block; margin:0 7px 0; *margin-bottom:7px;margin-bottom:0\0; width:1px; height:6px; overflow:hidden; background:#A5A2A5}
+        .fr{float:right;}
+        .copy_meida{width: 350px;background:url(//game.gtimg.cn/images/speedm/web201704/img/ft_logo.png) no-repeat;/* line-height: 300; */overflow:hidden;float:left;/* height: 500px; */}
+        .copy_meida a{float:left;display:block;/* line-height: 300; */overflow:hidden;text-indent: -999em;}
+        .logo_game{width: 220px;height:44px;}
+        .logo_timi{width:48px;height:44px;margin-left: 10px;}
+        /*没预约弹窗*/
+        .win_pop1{position: absolute;left:0;top:0;right:0;bottom:0;margin:auto; width: 501px;height: 370px;background:url(//game.gtimg.cn/images/speedm/zhangjie/pc/windows.png) no-repeat 50% 0;display:none;}
+        .win_pop1 h5{font-size: 20px;color: #fff;margin: 126px auto 10px;text-align: center;}
+        .win_pop1 p{font-size: 14px;color: #6979e5;text-align: center;}
+        .win_pop1 a{display: block;width:176px;height: 54px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -879px -348px;margin: 60px auto;text-align: center;line-height: 50px;font-size: 18px;color: #fb6200;font-weight: bold;}
+        .win_pop1 a:hover{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -744px -564px;}
+        .fixe_dimg1 img{display: block;width: 812px;height: 423px;margin: 85px 0 0 25px;}
+        /*信封弹窗*/
+        .win_pop p{text-align: center;color:#272467; font-size: 24px;margin-top: 10px;}
+        .win_pop .section{width: 695px;height: 336px;margin: 132px auto;}
+        .section .character{box-sizing: border-box; width: 350px;height: 336px;border-right: 2px dashed #28267a;}
+        .character h4{font-size: 14px;color: #fdd65a;margin-bottom: 30px;}
+        .character p,.character span{font-size: 14px;color: #fff;}
+        .character p.last{margin: 35px 0 147px 0;}
+        .character span{margin-right: 25px;}
+        .section .video,.section .img{width: 345px;height: 336px;}
+        .slide1,.slide2{ width:812px; height:463px; margin:18px auto; position:relative; overflow:hidden;}
+        .slide1 .img1,.slide2 .img2{width:1628px; position:absolute; left:0px;top:0px;}
+        .slide1 .img1 img,.slide2 .img2 img{width:812px; height:463px;}
+        .slide1 .img1 li,.slide2 .img2 li{float:left;}
+        .slide1 .btn,.slide2 .btn {width: 37px;height: 58px;display: inline-block;position: absolute;top:220px;cursor: pointer;}
+        .slide1 .btn_l,.slide2 .btn_l{ left:0px; background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -542px -695px;}
+        .slide1 .btn_r,.slide2 .btn_r{ right:0px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -590px -695px;}
+        /*手机线索弹窗*/
+        .swiper-3{width: 812px;height: 463px;margin-top: 65px;}
+        .cover{  margin: 65px 25px;}
+        /*笔记本弹窗*/
+        .fixe_dimg4 h4{color: #6979e5;margin-bottom: 154px;}
+        .fixe_dimg4 li,.fixe_dimg4 p{color: #6979e5;line-height: 25px;list-style: inside;font-size: 16px;}
+        .fixe_dimg4 .img img{width: 285px;height: 160px;display: block;margin: 0 auto;}
+        .fixe_dimg4 .img .zj1{margin-bottom: 17px;}
+        /*录音带弹窗*/
+        #fixe_dimg5 img{margin: 17px 0 0 23px;}
+        h3.after{position: absolute; font-size: 39px;color: #fff;right: 105px;top:170px;}
+        h3.after span{font-size: 14px;color: #6979e5;display: block;text-align: center;}
+        h3.after i{margin:0 10px ;}
+        .none{display: none;}
+        .win_pop{z-index: 9999; position: absolute;left:0;top:0;right:0;bottom:0;margin:auto; width: 860px;height: 550px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/border.png) no-repeat 50% 0;}
+        .win_pops{background-color:#0c279b; position: absolute;left:0;top:100px;right:0;bottom:0;margin:auto; width: 850px;height:499px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/win_pops.png) no-repeat 50% 0;}
+         .close{position: absolute;right: 0;top:0;display: block;width: 65px;height: 50px;cursor: pointer;}
+        .win_pop .circle{position: absolute;left: 310px;top: 190px;width: 106px;height:218px;}
+        .win_pop .square{position: absolute;left: 80px;top: 180px;width: 242px;height: 238px;}
+        #lyc{width: 300px;height: 159px;overflow: hidden;margin: 268px 0 0 470px;}
+        #lyc ul{width: 300px;height: auto;list-style: none;padding: 0;margin: 60px 0 0 0;overflow: hidden;}
+        #lyc li{width: 100%;height: 30px;line-height: 30px;text-align:left;font-size:14px;color: #fff;}
+        #lyc li.on{color: #fdd65a;}
+        .controls{position: relative;width: 940px;height: 60px;margin: 20px 0 0 30px;}
+        #play{display: inline-block;width: 29px;height: 29px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/player.png);margin-top: 16px;}
+        #play.on{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/pause.png) no-repeat;width: 29px;height: 29px;}
+        .controls h4{display: inline-block;font-size: 18px;color: #fff;margin: 0 0 0 18px;vertical-align: top;}
+        #bar_box{position: absolute;left: 50px;top: 35px;width: 650px;height: 5px;background: #1a51b1;}
+        #bar{position: absolute;width: 100px;height: 5px;background: #fdd65a;}
+        #bar_box .time{position: absolute;right: -100px;top: -8px;color: #fff;font-size: 16px;}
+        #curr-time,#total-time{font-style: normal;}
+        .fixe_dimg5{display: none; }
+        /*向张杰告白*/
+        .subjects{width: 691px;height: 440px;margin: 76px auto;}
+        .subjects .t1{font-size: 14px;color:#ffe351;}
+        .subjects .t2{font-size: 14px;color:#acbcff;}
+        .subjects .txt{width: 100%;height: 80px;box-sizing: border-box;background-color: #2a2886;border: 1px solid#293396;margin-top: 20px;}
+        .subjects a{display: block;width:176px;height: 54px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -879px -348px;margin: 60px auto;text-align: center;line-height: 50px;font-size: 18px;color: #fb6200;font-weight: bold;}
+        .subjects a:hover{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -777px -628px;}
+        .subjects .marg{margin: 10px 0 18px 516px;}
+        .subjects .sift{width: 691px;height: 218px;box-sizing: border-box;background-color: #2a2886;border: 1px solid#293396;}
+        .subjects .sift_txt{height: 92%;width: 97%;margin: 9px auto;}
+        .sift_txt .jxwt{font-size: 14px;color: #8c9ad6;margin-bottom: 15px;}
+        .sift_txt li{padding: 5px 0;}
+        .sift_txt li p{font-size: 14px;color: #fff;line-height: 26px;}
+        .sift_txt li span{font-size: 14px;color: #acbcff;}
+        .sift_txt img{margin-right: 6px; display: inline-block;width: 48px;height: 48px;border-radius: 50%;background-color: #2833a3;}
+        .comment1{width: 700px;height:400px;margin:65px auto;overflow:hidden;}
+        .comment1 h4{width: 100%;text-align: left;margin: 0;font-size: 30px;border-bottom: 1px solid #fff;}
+        .comment1 h4 span{color:#15b0ff; text-decoration: none; font-weight: bold;border-bottom: 4px solid #15b0ff;}
+        .swiper-slide{font-size: 12px;}
+        /*滚动条*/
+        .comment1 div.scroll{height:90%;margin:20px auto 0;overflow-y:scroll;}
+        div.scroll::-webkit-scrollbar {  width:10px;  }
+        div.scroll::-webkit-scrollbar-thumb{   background-color:#fff;}
+        div.scroll::-webkit-scrollbar-track-piece{   background:#355da9; }
+        /*评论*/
+        #comment { padding:0 50px 50px 50px; }
+        .common_title { margin-top: 0;}
+        .common_title b{color: #fff;}
+        .common_maintxt p,.common_maintxt b{color: #fff !important;}
+        .user_word.user_word_down{color: #fff !important;}
+        .common_maintxt{color: #fff !important;}
+        .fname{color: #3a99a6;}
+        .comment_edit a{color: #fff;text-decoration: none;}
+        .comment_edit a.com_login_btn{color:#000;}
+        .com_login_btn{background: #ffe355;}
+        .common_head{color: #fff;}
+        .mod-alert{z-index: 1001;}
+        .comment_input{text-align: left;color: #fff;width: 98%;}
+        .common_maintxt{width: 89%;}
+        /*弹窗二维码*/
+        .fixedimg{display: none; position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index: 1000;}
+        .fixedimg .code_img{display:block;position:absolute;left:0;top:0;right:0;bottom:0;margin:auto;width:200px;height:200px;}
+        /*轮播图*/
+        .move{width: 1032px;height: auto;margin: 0 auto;position: relative;margin-top: 25px;}
+        .swiper-1{ width: 1032px;  margin: 0 auto;}
+        .swiper-1 .swiper-slide{  width: 460px;}
+        .swiper-1 .swiper-slide-active{width:460px !important;}
+        .swiper-1 .swiper-slide img{display: block;margin:0 auto; width: 460px; height: auto;  }
+         .move .swiper-pagination{top:800px;position: absolute;height: 6px;width: 100%;text-align: center;  }
+        .move .swiper-pagination span{width: 25px;height: 25px;margin-right: 25px;background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -81px -323px;}
+        .swiper-1 .move_cover{width: 1032px;height:auto;margin: 60px auto 0;  }
+        .move .swiper-pagination .swiper-pagination-bullet-active{position:relative}
+        .move .swiper-pagination .swiper-pagination-bullet-active:after{content:""; display: block;position:absolute;top:6px;left:6px;width:8px;height:8px;  background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/bg.png) no-repeat -122px -328px;}
+        .swiper-button-prev{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/left.png) no-repeat;width: 54px;height: 82px;margin-left: -70px;}
+        .swiper-button-next{background: url(//game.gtimg.cn/images/speedm/zhangjie/pc/right.png) no-repeat;width: 54px;height: 82px;margin-right: -70px;}
+        .swiper-2.swiper-container {width: 100%;height: 100%;}
+        #plays{width:812px;height:463px;position:relative; margin: 20px 24px 0;}
+        #playe{width:812px;height:463px;position:relative; margin: 20px 24px 0;}
+        .sec7{height: 180px;}
+        @media screen and (max-width:1200px) {
+            #pargination {
+                right: 10%;
+            }
+        }
+        @media screen and (max-height:720px) {
+            #pargination {
+                top: 75%;
+            }
+        }
+        .swiper-slide{cursor: default;}
+    </style>
+</head>
+<body>
+<div class="index-wrap swiper-container swiper-2" id="slide">
+    <div class="swiper-wrapper">
+        <div class="sec1 swiper-slide swiper-no-swiping" >
+            <!--#include virtual="inc/header.inc"-->
+            <div class="person">
+                <div class="wrapp">
+                    <a href="javascript: ;" class="player" id="player" onclick="PTTSendClick('btn','bofanganniu','播放按钮');">播放按钮</a>
+                    <a href="javascript:;" class="arrow" onclick="PTTSendClick('btn','jiantou','箭头');">箭头</a>
+                </div>
+            </div>
+        </div>
+        <div class="sec2 swiper-slide swiper-no-swiping">
+            <h3 class="bts"><span href="javasript:;" class="smlx" id="arrow1">张杰神秘来信</span></h3>
+            <div class="envelope">
+                <div class="progress">
+                    <div class="progress_bar" id="progress_bar"></div>
+                </div>
+                <ul class="message" id='message'>
+                    <li class="first">
+                        <b></b>
+                        <strong>12月18日</strong>
+                        <i>解锁第一条线索</i>
+                        <a href="javascript:alert('敬请期待')" onclick="PTTSendClick('btn','xinf','信封');"></a>
+                    </li>
+                    <li class="">
+                        <b></b>
+                        <strong>12月20日</strong>
+                        <i>解锁第二条线索</i>
+                        <a href="javascript:alert('敬请期待')" onclick="PTTSendClick('btn','xinf','信封');"></a>
+                    </li>
+                    <li>
+                        <b></b>
+                        <strong>12月22日</strong>
+                        <i>解锁第三条线索</i>
+                        <a href="javascript:alert('敬请期待')" onclick="PTTSendClick('btn','xinf','信封');"></a>
+                    </li>
+                    <li>
+                        <b></b>
+                        <strong>12月25日</strong>
+                        <i>解锁第四条线索</i>
+                        <a href="javascript:alert('敬请期待')" onclick="PTTSendClick('btn','xinf','信封');"></a>
+                    </li>
+                    <li>
+                        <b></b>
+                        <strong>12月27日</strong>
+                        <i>解锁第五条线索</i>
+                        <a href="javascript:alert('敬请期待')" onclick="PTTSendClick('btn','xinf','信封');"></a>
+                    </li>
+                </ul>
+                <p class="first_p">张杰与QQ飞车手游究竟能擦出怎样的火花？</p>
+                <p>12月17日起，悬念将逐渐揭晓</p>
+                <p>让我们拭目以待...</p>
+                <a href="" class="arrows arrow" onclick="PTTSendClick('btn','jiantou','箭头');">箭头</a>
+            </div>
+        </div>
+        <div class="sec3 swiper-slide swiper-no-swiping">
+            <div class="sec3_content">
+                <a href="javascript:alert('敬请期待')" class="pic_1" onclick="PTTSendClick('btn','tanc','弹窗');"></a>
+                <a href="javascript:;" class="pic_2" onclick="PTTSendClick('btn','tanc','弹窗');"></a>
+                <a href="javascript:;" class="pic_3" onclick="PTTSendClick('btn','tanc','弹窗');"></a>
+                <a href="javascript:alert('敬请期待')" class="pic_4" onclick="PTTSendClick('btn','tanc','弹窗');"></a>
+                <a href="javascript:alert('敬请期待')" class="pic_5" onclick="PTTSendClick('btn','tanc','弹窗');"></a>
+                <a href="javascript:;" class="arroww arrow" onclick="PTTSendClick('btn','jiantou','箭头');">箭头</a>
+                <span  class="hint_1"><b>未解锁</b></span>
+                <span  class="hint_2"><b>未解锁</b></span>
+                <span  class="hint_3"><b>未解锁</b></span>
+                <span  class="hint_4"><b>未解锁</b></span>
+                <span  class="hint_5"><b>未解锁</b></span>
+            </div>
+        </div>
+        <div class="sec4 swiper-slide swiper-no-swiping">
+            <h3 class="btm"><span href="javascript;" class="xnjm">向张杰告白</span></h3>
+            <p id="huoqu">在评论区向张杰告白,就有机会获取100Q币</p>
+            <!--向张杰告白-->
+                <div class="win_pops">
+                    <div class="comment1">
+                        <h4><span>全部评论</span></h4>
+                        <div class='scroll'>
+                            <div id="comment"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="sec6 swiper-slide swiper-no-swiping">
+            <h3 class="bt"><span href="javascript;" class="yxts">游戏特色</span></h3>
+            <div class="move_cover">
+                <div class="move">
+                    <div class="swiper-container swiper-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="//game.gtimg.cn/images/speedm/zhangjie/pc/slide1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="//game.gtimg.cn/images/speedm/zhangjie/pc/slide2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="//game.gtimg.cn/images/speedm/zhangjie/pc/slide3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="//game.gtimg.cn/images/speedm/zhangjie/pc/slide4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="//game.gtimg.cn/images/speedm/zhangjie/pc/slide5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="//game.gtimg.cn/images/speedm/zhangjie/pc/slide6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!--二维码-->
+            <div class="fbox">
+                <ul class="code">
+                    <li class="one" data-url='//game.gtimg.cn/images/speedm/zhangjie/pc/qyouxihao.png'>
+                        <a href="javascript:void(0);" onclick="PTTSendClick('btn','youxihao','手Q游戏号');"></a>
+                        <p>手Q游戏号</p>
+                    </li>
+                    <li class="second">
+                        <a href="https://buluo.qq.com/p/barindex.html?bid=373701" onclick="PTTSendClick('btn','buluo','手Q兴趣部落');"></a>
+                        <p>手Q兴趣部落</p>
+                    </li>
+                    <li class="three" data-url='//game.gtimg.cn/images/speedm/zhangjie/pc/qiyewx.png'>
+                        <a href="javascript:void(0);" onclick="PTTSendClick('btn','gongzhonhao','微信公众号');"></a>
+                        <p>微信公众号</p>
+                    </li>
+                    <li class="four" data-url='//game.gtimg.cn/images/speedm/zhangjie/pc/yxqz.png'>
+                        <a href="javascript:void(0);" onclick="PTTSendClick('btn','youxiquan','微信游戏圈');"></a>
+                        <p>微信游戏圈</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec7 swiper-slide swiper-no-swiping">
+            <!--footer-->
+            <div class="footer ">
+                <div class="footer_wp">
+                    <div class="copy_meida">
+                        <p class="clear">
+                            <a href="//jade.qq.com" title="腾讯互动娱乐 - 琳琅天上工作室" target="_blank" class="logo_game">腾讯互动娱乐</a>
+                            <a href="//timi.qq.com" title="天美工作室群" target="_blank" class="logo_timi">天美工作室群</a></p>
+                        <dl class="footer_tips clear">
+                            <dt>温馨提示：本游戏适合全年龄人群</dt>
+                            <dd>
+                                <ul>
+                                    <li>抵制不良游戏</li>
+                                    <li>拒绝盗版游戏</li>
+                                    <li>注意自我保护</li>
+                                    <li>谨防受骗上当</li>
+                                    <li>适度游戏益脑</li>
+                                    <li>沉迷游戏伤身</li>
+                                    <li>合理安排时间</li>
+                                    <li>享受健康生活</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="footer_links_area">
+                        <p><a href="//game.qq.com/portal2010/about.htm" target="_blank">关于腾讯游戏</a><span>|</span><a href="//game.qq.com/contract.shtml" target="_blank">服务条款</a><span>|</span><a href="//adver.qq.com/" target="_blank">广告服务</a><span>|</span><a href="//game.qq.com/hr/" target="_blank">腾讯游戏招聘</a><span>|</span><a href="//service.qq.com/" target="_blank">腾讯游戏客服</a><span>|</span><a href="//game.qq.com/portal2010/business.htm" target="_blank">商务合作</a><span>|</span><a href="//game.qq.com/gnav" target="_blank">游戏地图</a><span>|</span><a href="//tgact.qq.com/" target="_blank">游戏活动</a></p>
+                        <p class="e"><a href="//www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank" class="fr">腾讯公司版权所有</a>COPYRIGHT &copy; 1998 – 2017 TENCENT. ALL RIGHTS RESERVED.</p>
+                        <p><a href="//www.qq.com/culture.shtml" target="_blank">粤网文[2017]6138-1456号</a> | <a href="//game.qq.com/culture2.htm" target="_blank">新出网证（粤）字010号</a> | 文网游备字〔2017〕Ｍ-CSG 0080 号</p>
+                        <p><a href="//sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/gameNetTag/4028c08b5981e7bf01598728d8790957" target="_blank">新广出审[2017]5377号 | ISBN 978-7-7979-8888-9</a>
+                        <p>全国文化市场统一举报电话：12318</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='pargination'></div>
+</div>
+<!--神秘照片弹窗 -->
+
+    <div class="win_pop none" id='fixe_dimg1'>
+        <p>杰哥虚拟座驾曝光</p>
+        <a href="javascript:;" class="close"onclick="PTTSendClick('btn','guanbi','关闭');"></a>
+        <div id="playe"></div>
+    </div>
+
+<!--信封弹窗-->
+
+    <div class="win_pop none" id='fixe_dimg2'>
+        <a href="javascript:;" class='close' onclick="PTTSendClick('btn','guanbi','关闭');"></a>
+        <p>赛车里的人是？</p>
+        <div class="slide1">
+            <ul class="img1 clear">
+                <li><img src="//game.gtimg.cn/images/speedm/zhangjie/pc/racing3.jpg" alt="" /></li>
+                <li><img src="//game.gtimg.cn/images/speedm/zhangjie/pc/racing4.jpg" alt="" /></li>
+            </ul>
+            <a class="btn btn_l" onclick="PTTSendClick('btn','anniu','按钮');"></a>
+            <a class="btn btn_r" onclick="PTTSendClick('btn','anniu','按钮');"></a>
+        </div>
+    </div>
+
+<!--手机线索弹窗-->
+
+    <div class="win_pop none" id='fixe_dimg3'>
+        <p>花絮大曝光</p>
+        <a href="javascript:;"  class='close' onclick="PTTSendClick('btn','guanbi','关闭');"></a>
+        <div id="plays"></div>
+    </div>
+
+<!--笔记本弹窗-->
+
+    <div class="win_pop none" id='fixe_dimg4'>
+    <a href="javascript:;" class='close' onclick="PTTSendClick('btn','guanbi','关闭');"></a>
+        <p>杰哥在干嘛？</p>
+        <div class="slide2">
+            <ul class="img2 clear">
+                <li><img src="//game.gtimg.cn/images/speedm/zhangjie/pc/PC4.jpg" alt=""/></li>
+                <li><img src="//game.gtimg.cn/images/speedm/zhangjie/pc/PC5.jpg" alt="" /></li>
+            </ul>
+            <a herf="" class="btn btn_l" onclick="PTTSendClick('btn','anniu','按钮');"></a>
+            <a herf="" class="btn btn_r" onclick="PTTSendClick('btn','anniu','按钮');"></a>
+        </div>
+    </div>
+<!--录音带弹窗  -->
+    <div class="win_pop none" id="fixe_dimg5">
+        <p>与杰哥一起漂移</p>
+        <a href="javascript:;" class="close" onclick="PTTSendClick('btn','guanbi','关闭');"></a>
+        <img src="//game.gtimg.cn/images/speedm/zhangjie/pc/p5.jpg" alt="">
+    </div>
+<!--二维码弹窗-->
+<div class='fixedimg'><img src=""  alt="" class="code_img"></div>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//game.gtimg.cn/images/js/milo_bundle/milo.js"></script>
+<script src="js/comment-pc-1.0.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//game.gtimg.cn/images/clqs/cp/a20171023reserve/pc/js/swiper-3.4.2.min.js"></script>
+<script src='//apps.game.qq.com/CommArticle/app/reg/gdate.php'></script>
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+<script>
+    var player = new Txplayer({
+        containerId: 'plays',
+        vid: 'n0521jrqz65',
+        width: '812',
+        height: '463',
+        autoplay: true
+    });
+    var player1 = new Txplayer({
+        containerId: 'playe',
+        vid: 'j0523e9jxcz',
+        width: '812',
+        height: '463',
+        autoplay: true
+    });
+
+$('.close').on('click',function () {
+    $('.win_pop').hide()
+   })
+
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"zhangjie", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName:"首页", //必填项:页面中文名
+        osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+    window.cm = new Comment({
+        el: '#comment',
+        options: {
+            gameid: 'qsm',
+            // title: '评论测试',
+            stime: '201710',
+            objid: '1507517821150',
+            moduleId: 'feed_mobile',
+            sandbox:"1",
+            // channel: 5
+        },
+        login: {
+            wxappid: 'wx360b06d575d20cc3',
+            qqappid: '1104922185'
+        },
+    });
+
+//    var json_curdate = '2017-12-27 13:58:50';
+    var progress_bars = document.getElementById("progress_bar");
+    var sertime=new Date(json_curdate.replace(/-/g,"/")).getDate()
+    var messageli=document.querySelectorAll('#message li');
+    var user = document.querySelectorAll("#user li");
+    var timearr=[];
+//    获取解锁信息内容
+    for(var i=0;i<messageli.length;i++){
+        timearr.push(messageli[i].getElementsByTagName('strong')[0].innerHTML.split('月')[1].split('日')[0]);
+        messageli[i].addEventListener('click',function(){
+        },false)
+    }
+    for(var i=0;i<timearr.length;i++){
+        if(sertime-timearr[i]>=0){
+            switch (timearr[i]){
+                case '18' :
+                    messageli[0].className+=" on";
+                    progress_bars.style.width = 7 + "%";
+                    messageli[0].getElementsByTagName("i")[0].innerHTML="已解锁";
+//                    user[0].getElementsByTagName("span")[0].innerHTML="5"
+                    messageli[0].getElementsByTagName("a")[0].href = "javascript:;";
+                    $(messageli[0]).find('a').addClass('unlocked')
+                    $(".hint_2").addClass('on')
+                    $(".hint_2").children("b").html('解锁第一条线索')
+                    $(".pic_2").click(function () {
+                        $("#fixe_dimg2").show().siblings(".win_pop").hide()
+                        player.pause()
+                    })
+                    break;
+                case '20' :
+                    messageli[1].className+=" on";
+                    progress_bars.style.width = 30 + "%";
+                    messageli[1].getElementsByTagName("i")[0].innerHTML="已解锁";
+//                    user[0].getElementsByTagName("span")[0].innerHTML="4"
+                    messageli[1].getElementsByTagName("a")[0].href = "javascript:;";
+                    $(messageli[1]).find('a').addClass('unlocked')
+                    $(".hint_3").addClass('on')
+                    $(".hint_3").children("b").html('解锁第二条线索')
+                    $(".pic_3,.player").click(function () {
+                        $("#fixe_dimg3").show().siblings(".win_pop").hide()
+                        player.togglePlayPause()
+                    })
+                    break;
+                case '22' :
+                    messageli[2].className+=" on";
+                    progress_bars.style.width = 52 + "%";
+                    messageli[2].getElementsByTagName("i")[0].innerHTML="已解锁";
+//                    user[0].getElementsByTagName("span")[0].innerHTML="3"
+                    messageli[2].getElementsByTagName("a")[0].href = "javascript:;";
+                    $(messageli[2]).find('a').addClass('unlocked')
+                    $(".hint_1").addClass('on')
+                    $(".hint_1").children("b").html('解锁第三条线索')
+                    $(".pic_1").attr("href","javascript:;")
+                    $(".pic_1").on("click",function () {
+                        $("#fixe_dimg4").show().siblings(".win_pop").hide();
+                        player.pause()
+                    });
+                    break;
+                case '25' :
+                    messageli[3].className+=" on";
+                    progress_bars.style.width = 74 + "%";
+                    messageli[3].getElementsByTagName("i")[0].innerHTML="已解锁";
+//                    user[0].getElementsByTagName("span")[0].innerHTML="2"
+                    messageli[3].getElementsByTagName("a")[0].href = "javascript:;";
+                    $(messageli[3]).find('a').addClass('unlocked')
+                    $(".hint_4").addClass('on')
+                    $(".hint_4").children("b").html('解锁第四条线索')
+                    $(".pic_4").attr("href","javascript:;")
+                    $(".pic_4,.player").click(function () {
+                        $("#fixe_dimg1").show().siblings(".win_pop").hide()
+                        player.pause()
+                    })
+                    break;
+                case '27' :
+                    messageli[4].className+=" on";
+                    progress_bars.style.width = 100 + "%";
+                    messageli[4].getElementsByTagName("i")[0].innerHTML="已解锁";
+//                    user[0].getElementsByTagName("span")[0].innerHTML="1"
+                    messageli[4].getElementsByTagName("a")[0].href = "javascript:;";
+                    $(messageli[4]).find('a').addClass('unlocked')
+                    $(".hint_5").addClass('on')
+                    $(".hint_5").children("b").html('解锁第五条线索')
+                    $(".pic_5").attr("href","javascript:;")
+                    $(".pic_5").click(function () {
+                        $("#fixe_dimg5").show().siblings(".win_pop").hide()
+                        player.pause()
+                    })
+                    break;
+            }
+        }
+    }
+    $('#message').on('click','.unlocked',function () {
+        mySwiper2.slideTo(2)
+    })
+
+//    滚动
+    $(".comment").hover(function(){
+        mySwiper2.disableMousewheelControl();
+    },function(){
+        mySwiper2.enableMousewheelControl();
+    })
+</script>
+</body>
+</html>
+<script>
+    // 轮播1
+    var swiper1 = new Swiper('.swiper-1', {
+        loop : true,
+        pagination: '.swiper-pagination',
+        slidesPerView: 2,
+        effect: 'coverflow',
+        paginationClickable: true,
+        grabCursor: false,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        autoplay : 3000,
+        autoplayDisableOnInteraction : false,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        coverflow: {
+            rotate: 0,// 旋转的角度
+            stretch: -45,// 拉伸   图片间左右的间距和密集度
+            depth: 300,// 深度   切换图片间上下的间距和密集度
+            modifier: 2,// 修正值 该值越大前面的效果越明显
+            //slideShadows : false// 页面阴影效果
+        }
+    });
+    //轮播2
+    var mySwiper2 = new Swiper('.swiper-2',{
+        slidesPerView : 'auto',
+        direction : 'vertical',
+        keyboardControl : true,
+        mousewheelControl : true,
+        pagination: '#pargination',
+        paginationClickable: true,
+        onSlideChangeEnd: function(swiper){
+        }
+
+    });
+//    信封弹窗轮播
+    var page = -1;
+    var len1 = $(".img1 li").length;
+    var play = true;
+    function slider1(){
+        if(play){
+            page++;
+            if(page>=len1)page=0;
+            //指定一张图片显示
+            $(".img1 li").eq(page).fadeIn(800);
+        }
+        //设置一个延时的定时器
+        setTimeout(slider1,2000);
+    }
+    //执行一次轮播函数
+    slider1();
+    //给鼠标添加悬停,暂停播放
+    $(".slide1").hover(function(){
+        play=false;
+    },function(){
+        play=true;
+    })
+    //控制区域事件
+    $(".slide1>a").on("click",function(){
+        //判断点击的是左边的 还是右边
+        if($(this).is(".slider-left")){//如果点击的是左边的
+            if(page<=0)page=len1;
+            page--;
+            //指定一张图片显示
+            $(".img1 li").eq(page).fadeIn(800).siblings().hide();
+        }else{
+            page++;
+            if(page>=len1)page=0;
+            //指定一张图片显示
+            $(".img1 li").eq(page).fadeIn(800).siblings().hide();
+        }
+    });
+//   笔记本弹窗轮播
+    var page = -1;
+    var len2 = $(".img2 li").length;
+    var play = true;
+    function slider2(){
+        if(play){
+            page++;
+            if(page>=len2)page=0;
+            //指定一张图片显示
+            $(".img2 li").eq(page).fadeIn(800);
+        }
+        //设置一个延时的定时器
+        setTimeout(slider2,3000);
+    }
+    //执行一次轮播函数
+    slider2();
+    //给鼠标添加悬停,暂停播放
+    $(".slide2").hover(function(){
+        play=false;
+    },function(){
+        play=true;
+    })
+    //控制区域事件
+    $(".slide2>a").on("click",function(){
+        //判断点击的是左边的 还是右边
+        if($(this).is(".slider-left")){//如果点击的是左边的
+            if(page<=0)page=len2;
+            page--;
+            //指定一张图片显示
+            $(".img2 li").eq(page).fadeIn(800).siblings().hide();
+        }else{
+            page++;
+            if(page>=len2)page=0;
+            //指定一张图片显示
+            $(".img2 li").eq(page).fadeIn(800).siblings().hide();
+        }
+    });
+    var pargin=document.getElementById('pargination').getElementsByTagName('span')
+    var arr=['首<em>页</em>','神秘来信','神秘线索','告白张杰','游戏特色'];
+    setTimeout(function(){
+        for(var i=0;i<arr.length;i++){
+            if(i==4){
+                pargin[i].innerHTML='<a href="javascript:;">'+arr[i]+'</a><b></b>';
+                break;
+            }else{
+                pargin[i].innerHTML='<a href="javascript:;">'+arr[i]+'</a><b></b><i></i><i></i>';
+            }
+        }
+    },500)
+
+    window.onresize=function(){
+        for(var i=0;i<arr.length;i++){
+            if(i==4){
+                pargin[i].innerHTML='<a href="javascript:;">'+arr[i]+'</a><b></b>';
+                break;
+            }
+            var _html='<a href="javascript:;">'+arr[i]+'</a><b></b><i></i><i></i>';
+            pargin[i].innerHTML=_html;
+        }
+        return false;
+    }
+
+
+    /*弹窗二维码*/
+    var fixedimg=document.querySelector('.fixedimg img');
+    fixedimg.addEventListener('click',function(e){
+        e.stopPropagation()
+        return false;
+    })
+    document.body.addEventListener('click',function(){
+        fixedimg.parentNode.style.display='none';
+    })
+    var codeli=document.querySelectorAll('.code li');
+    for(var i=0;i<codeli.length;i++){
+        codeli[i].index=i;
+        codeli[i].addEventListener('click',function(e){
+            e.stopPropagation()
+            if(this.index==1){
+                return false;
+            }
+            fixedimg.parentNode.style.display='block';
+            fixedimg.src=this.getAttribute('data-url');
+            return false;
+
+        })
+    }
+
+
+
+</script>

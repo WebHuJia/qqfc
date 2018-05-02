@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ飞车》端游是腾讯首款在线突破300万的自研大作，迄今累计超过4.5亿注册用户。两年来，《QQ飞车》端游研发团队成功让《QQ飞车》手游完美还原了端游的大部分操作技巧，上手容易之余，同时又有足够的操作深度，力求给玩家提供一个原汁原味却又充满诚意的飞车手游！" />
+    <meta name="Keywords" content="QQ飞车手游,飞车手游,QQspeed,张杰，歌手张杰，谢娜，，fast,QQ飞车音乐总监，漂移玩音乐，星星，恒星，璀璨星空，QQkart,SSC超级联赛,赛车游戏,赛车,卡丁车,休闲区,同城交友,跑跑,跑跑卡丁车,最好玩,时尚,时尚赛车,剃刀,针尖,针尖杯,腾讯游戏,QQ游戏,视频,WCG,赛道视频,沉睡森林,海滨发夹,海洋公园,漂移,飞车宝贝,宝贝,车队,子弹"/>
+    <title> Q飞手游携手张杰，一起搞事情-QQ飞车手游唯一官方正版-极速漂移一触即发</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <!-- 设计：cp  | 重构：cp | 创建：2017/12/4  -->
+    <style type="text/css">
+       .swiper-1{
+            width:100%;
+            height:920px;
+        }
+        /*#swiper-container4 .swiper-slide{*/
+            /*height:100%;*/
+        /*}*/
+       .swiper-1 .swiper-slide:last-child{
+             height:150px;
+         }
+    </style>
+</head>
+<body>
+<div class="swiper-container swiper-1">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide " >
+            全高slider1</div>
+        <div class="swiper-slide" >
+            全高slider2</div>
+        <div class="swiper-slide">
+            全高slider3</div>
+        <div class="swiper-slide">
+            全高slider4</div>
+        <div class="swiper-slide">
+            最后一个slide</div>
+    </div>
+    <ul class="swiper-pagination"></ul>
+</div>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//game.gtimg.cn/images/clqs/cp/a20171023reserve/pc/js/swiper-3.4.2.min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"zhangjie", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName:"首页", //必填项:页面中文名
+        osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>
+<script>
+    var mySwiper1 = new Swiper('.swiper-1',{
+        slidesPerView : 'auto',
+        direction : 'vertical',
+        keyboardControl : true,
+        mousewheelControl : true,
+        paginationClickable: true,
+        pagination :'.swiper-1 .swiper-pagination',
+        paginationElement: 'li',
+        onTransitionEnd: function(swiper){
+            if(swiper.progress==1){
+                swiper.activeIndex=swiper.slides.length-1
+            }
+        }
+    })
+</script>

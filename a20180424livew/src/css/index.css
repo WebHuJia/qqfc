@@ -1,0 +1,62 @@
+/*公共样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+table{border-collapse:collapse;border-spacing:0}
+audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;outline: none;}
+input,textarea,select{*font-size:100%}
+a {text-decoration: none;outline: none;color: #fff;}
+.q:after {content:""; display:block; height:0; clear:both; overflow:hidden;}
+body{font-family:'\5FAE\8F6F\96C5\9ED1';color: #fff;  background: #173079;}
+button{font-family:'\5FAE\8F6F\96C5\9ED1';}
+.t_hide{text-indent: -2000rem;overflow: hidden;}
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;}
+i{font-style: normal;}
+html, body {
+    position: relative;
+    height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+.arrows {
+    position: absolute;
+    bottom: 0.2rem;
+    width: 0.64rem;
+    height: 0.32rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url(//game.gtimg.cn/images/speedm/cp/ingame/a20180424livew/arrow.png) no-repeat center/cover;
+    animation:down-arrow 1.5s infinite ease-in-out;
+    z-index: 999;
+}
+@keyframes down-arrow {
+    0%, 25% {
+        opacity:0;
+        transform:translateY(-0.08rem);
+    }
+    50% {
+        opacity:1;
+        transform:translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0.12rem);
+    }
+}

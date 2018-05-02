@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="format-detection" content="telephone=no" />
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="robots" content="all" />
+<meta name="Copyright" content="Tencent" />
+<meta name="author" content="Tencent-cp" />
+<meta name="Description" content="《QQ飞车》端游是腾讯首款在线突破300万的自研大作，迄今累计超过4.5亿注册用户。两年来，《QQ飞车》端游研发团队成功让《QQ飞车》手游完美还原了端游的大部分操作技巧，上手容易之余，同时又有足够的操作深度，力求给玩家提供一个原汁原味却又充满诚意的飞车手游！" />
+<meta name="Keywords" content="QQ飞车手游,飞车手游,QQspeed,QQ飞车手游预约，QQ飞车预约不删档，QQ飞车手游不删档，预约, QQ飞车手游,飞车手游,不删档，QQspeedm,speedm，QQ飞车手游预约，QQ飞车预约不删档，QQ飞车手游不删档，QQ飞车不删档福利，赛车游戏,赛车,漂移，指尖漂移，卡丁车,休闲区,同城交友,跑跑,跑跑卡丁车,最好玩,时尚赛车,剃刀,针尖,针尖杯,腾讯游戏,QQ游戏,SSC超级联赛" />
+<!-- 设计：微聚cp  | 重构：微聚cp | 创建：2018-4-24  -->
+<title>张杰直播-QQ飞车手游-腾讯游戏</title>
+<link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+<script>
+(function () {
+  if (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+      //window.location.href = '' //pc
+  }
+}())
+</script>
+<style>
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+table{border-collapse:collapse;border-spacing:0}
+audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+a {-webkit-tap-highlight-color: transparent;}
+
+/* 适配 */
+html {font-size: calc(100vw / 750 * 100)}
+@media all and (orientation : landscape){html {font-size: calc(100vw / 1334 *100)}}
+
+/* kv */
+.kv { height: 7.2rem; background: url(ossweb-img/kv-bg.jpg) no-repeat 0 0/100% 100%; background-size: cover}
+.kv-top { display: flex; justify-content: space-between;}
+.kv-logo { width: 1.96rem; height: 1.08rem; background: url(ossweb-img/logo.png) no-repeat 0 0/100% 100%; text-indent: -9999px; margin: .32rem 0 0 .3rem;}
+.kv-logo a {display: block; width: 100%; height: 100%}
+.kv-btn { width: 3.09rem; height: 1.1rem; background: url(ossweb-img/enter-website.png) no-repeat 0 0/100% 100%; text-indent: -9999px; margin-right: .34rem;}
+.kv-title { width: 5.87rem; height: 3.16rem; background: url(ossweb-img/kv-title.png) no-repeat 0 0/100% 100%; text-indent: -9999px; margin: .3rem auto;}
+.kv-resttime-title { font-size: .28rem; color: #30f8ff; text-align: center; font-weight: bold; position: relative; line-height: 100%;}
+.kv-resttime-title:before, .kv-resttime-title:after { content: ""; position: absolute; width: .24rem; height: .14rem; background: url(ossweb-img/icons.png) no-repeat -4.3rem -3.07rem/7.5rem 3.96rem; top: .1rem;}
+.kv-resttime-title:before { left: 2.6rem }
+.kv-resttime-title:after { right: 2.6rem }
+.kv-resttime-box { width: 6.14rem; height: 1.59rem; background: url(ossweb-img/resttime-bg.jpg) no-repeat 0 0/100% 100%; margin: .1rem auto 0; color: #fff; font-size: 0; box-sizing: border-box; padding: .2rem .12rem;}
+.kv-resttime-box span { display: inline-block; font-size: .78rem; line-height: .93rem; width: .65rem; text-align: center;}
+.ctime_p1_1, .ctime_p2_1, .ctime_p3_1, .ctime_p4_1{margin-left: .02rem;}
+.ctime_p2_0, .ctime_p2_0, .ctime_p3_0, .ctime_p4_0{margin-left: .2rem;}
+.kv-resttime-box .ctime_s { display: none; }
+
+/* 漂移轰趴夜 */
+.live { height: 6.75rem; background: url(ossweb-img/cont-bg1.jpg) no-repeat 0 0/100% 100%; padding-top: .96rem; box-sizing: border-box; display: none; background-size: cover;}
+.live-title { width: 7.32rem; height: .59rem; background: url(ossweb-img/icons.png) no-repeat -.05rem -.05rem/7.5rem 3.96rem; margin: 0 auto; text-indent: -9999px;}
+.live-box { width: 7rem; height: 4.18rem; background: url(ossweb-img/video-bg.png) no-repeat 0 0/100% 100%; margin: .45rem auto; position: relative; overflow: hidden;}
+.live-video { width: 6.9rem; height: 4.12rem; background: #000; position: absolute; top: .03rem; left: .05rem;}
+.live-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: .84rem; height: .84rem; background: url(ossweb-img/icons.png) no-repeat -3.41rem -3.07rem/7.5rem 3.96rem;}
+
+/* 福利 */
+.welfare {height: 12.19rem; background: url(ossweb-img/cont-bg1.jpg) no-repeat 0 0/100% 100%; padding: .6rem 0 .55rem; box-sizing: border-box;}
+.welfare-title { width: 7.5rem; height: .5rem; background: url(ossweb-img/icons.png) no-repeat 0 -.69rem/100% 3.96rem; text-indent: -9999px; margin: 0 auto .82rem;}
+.welfare-car { width: 7.5rem; height: 4.64rem; margin: 0 auto .48rem; background: url(ossweb-img/welfare-car-bg.png) no-repeat 0 0/100% 100%; position: relative;}
+.welfare-subtitle { font-size: .42rem; line-height: .86rem; text-align: center; color: #30f8ff; font-weight: bold; width: 7.5rem; margin: .22rem auto 0;}
+.welfare-intro { font-size: .22rem; line-height: .36rem; color: #6798fc; padding: 0 .3rem; text-align: center; width: 7.5rem; margin: 0 auto; box-sizing: border-box;}
+.welfare-btn { width: 3.32rem; height: .84rem; line-height: .8rem; margin: .44rem auto 0; display: block; background: url(ossweb-img/icons.png) no-repeat -.05rem -3.07rem/7.5rem 3.96rem; font-size: .34rem; font-weight: bold; color: #521005; text-align: center; text-decoration: none;}
+.welfare span { position: absolute; color: #30f8ff; font-size: .22rem; }
+.welfare span.darken { color: #6798fc }
+.welfare span:nth-child(1) { top: .76rem; left: .36rem; }
+.welfare span:nth-child(2) { top: 1.12rem; left: .2rem; }
+.welfare span:nth-child(3) { top: 2.16rem; left: .36rem; }
+.welfare span:nth-child(4) { top: 2.46rem; left: .36rem; }
+.welfare span:nth-child(5) { top: 0; right: .1rem; }
+.welfare span:nth-child(6) { top: .35rem; right: 1rem; }
+.welfare span:nth-child(7) { top: 1.6rem; right: .64rem; }
+.welfare span:nth-child(8) { top: 2.75rem; right: .15rem; }
+
+/* 主播 */
+.anchor {height: 6.23rem; background: url(ossweb-img/cont-bg3.jpg) no-repeat 0 0/100% 100%; padding-top: .55rem; box-sizing: border-box; background-size: cover;}
+.anchor-title { width: 5.95rem; height: .49rem; background: url(ossweb-img/icons.png) no-repeat -.05rem -1.24rem/7.5rem 3.96rem; margin: 0 auto .5rem; text-indent: -9999px;}
+.anchor-list { display: flex; justify-content: space-between; padding: 0 .3rem; width: 6.9rem; margin: 0 auto;}
+.anchor-list li { width: 3.17rem; margin-bottom: .5rem}
+.anchor-list div { width: 2.49rem; height: 2.41rem;  border-radius: 50%; margin-left: .35rem; position: relative;}
+.anchor-circle { position: absolute; width: 100%; height: 100%; background: url(ossweb-img/circle1.png) no-repeat 0 0/100% 100%; animation: rotate 20s linear infinite}
+.anchor-list li:last-child i { background: url(ossweb-img/circle2.png) no-repeat 0 0/100% 100%; animation: rotate-reverse 20s linear infinite}
+.anchor-list li:last-child strong { color: #30f8ff }
+.anchor-list img { width: 2.15rem; height: 2.15rem; display: block; border-radius: 50%; position: relative; top: .12rem; left: .15rem}
+.anchor-list strong { font-size: .3rem; color: #aa4ef6; font-weight: bold; text-align: center; display: block; padding: .15rem 0 .2rem;}
+.anchor-list p { width: 3.17rem; height: 1.18rem; background: url(ossweb-img/anchor-text-bg.png) no-repeat 0 0/100% 100%; font-size: .22rem; line-height: .36rem; color: #6798fc; padding: .1rem .15rem 0; box-sizing: border-box;  text-align: justify; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;}
+
+/* 最新资讯 */
+.news {height: 7.6rem; padding-top: .64rem; box-sizing: border-box; background: url(ossweb-img/cont-bg4.jpg) no-repeat 0 0/100% 100%; background-size: cover;}
+.news-title { width: 6.81rem; height: .6rem; background: url(ossweb-img/icons.png) no-repeat -.05rem -1.78rem/7.5rem 3.96rem; margin: 0 auto .48rem; text-indent: -9999px;}
+.news-ads { width: 7.1rem; margin: 0 auto; overflow: hidden; }
+.news-ads-wrap { display: flex; position: relative;}
+.news-ads-wrap li { width: 4.17rem; height: 2.37rem; background-color: #fff; font-size: 0}
+.news-ads-wrap img { width: 4.17rem; height: 2.37rem; }
+.news-list {padding-top: .35rem; width: 7.5rem; margin: 0 auto;}
+.news-list li { font-size: .22rem; line-height: .56rem; display: flex; justify-content: space-between; margin: 0 .23rem; color: #6798fc; border-bottom: 1px dotted #283b81; box-sizing: border-box;}
+.news-list li.active { color: #30f8ff }
+.news-list a { color: inherit; text-decoration: none; width: 5.8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.news-list span { color: #3259aa }
+.news-ads .news-ads-pagination { width: auto; position: absolute; left: 50%; bottom: -.15rem; transform: translateX(-50%); z-index: 2;}
+.news-ads .news-ads-pagination li { width: .16rem; height: .16rem; border-radius: .08rem; background-color: #303d8c; margin: 0 .05rem; opacity: 1; transition: all .3s;}
+.news-ads .news-ads-pagination li.swiper-pagination-bullet-active { background-color: #30f8ff; width: .4rem}
+/* 合作伙伴 */
+.partner { padding-top: .5rem; box-sizing: border-box; background: url(ossweb-img/cont-bg5.jpg) no-repeat 0 0/100% 100%; background-size: cover;}
+.partner-title { width: 7.08rem; height: .59rem; background: url(ossweb-img/icons.png) no-repeat -.05rem -2.43rem/7.5rem 3.96rem; text-indent: -9999px; margin: 0 auto .42rem;}
+.partner-list { display: flex; justify-content: center; flex-wrap: wrap; padding: 0 0.95rem .05rem;}
+.partner-list li {width: 2.38rem; height: 1.07rem; margin: 0 .15rem .3rem;}
+.partner-list img {display: block; width: 100%; height: 100%;}
+
+/* 底部 */
+.foot { background-color: #162054; }
+.foot p {font-size: .22rem; text-align: center; color: #fff; line-height: .93rem;}
+.copyright_zh { display: none; }
+
+/* animation */
+@keyframes rotate {
+  form {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  form {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-reverse {
+  form {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@-webkit-keyframes rotate-reverse {
+  form {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+</style>
+</head>
+
+<body>
+<!-- kv -->
+<section class="kv">
+  <!-- kv头部 -->
+  <div class="kv-top">
+    <h1 class="kv-logo"><a href="/m/" ontouchend="PTTSendClick('kv','logo','logo');">QQ飞车</a></h1>
+    <a class="kv-btn" href="/m/" ontouchend="PTTSendClick('kv','enter-website','进入官网');">进入官网</a>
+  </div>
+  <!-- kv标题 -->
+  <h2 class="kv-title">漂移轰趴夜，与张杰一起漂移狂欢，iponeX，A车全场送不停</h2>
+  <!-- kv倒计时 -->
+  <div class="kv-resttime">
+    <p class="kv-resttime-title">开播倒计时</p>
+    <div class="kv-resttime-box" id="ctime">
+    </div>
+  </div>
+</section>
+
+<!-- live -->
+<section class="live">
+  <h3 class="live-title">漂移轰趴夜</h3>
+  <div class="live-box">
+    <div class="live-video" id="live-video"></div>
+    <i class="live-play"></i>
+  </div>
+</section>
+
+<!-- 福利 -->
+<section class="welfare">
+  <h3 class="welfare-title">提车之夜 福利不停</h3>
+  <div class="welfare-car">
+    <span>璀璨之星（永久）*6</span>
+    <span class="darken">（张杰专属A车）</span>
+    <span>100QB*50</span>
+    <span>500QB*10</span>
+    <span>杰出不凡套装（永久）*15</span>
+    <span class="darken">（张杰专属套装）</span>
+    <span>iphoneX*3</span>
+    <span>8888点券*20</span>
+  </div>
+  <h4 class="welfare-subtitle">直播福利大派送，多重豪礼在线拿</h4>
+  <p class="welfare-intro">直播期间，QQ飞车音乐总监张杰将为在线观众抽取N重好礼！IphoneX、永久A车璀璨之星、永久套装......豪礼拿到手软！</p>
+  <h4 class="welfare-subtitle">更多福利！尽在4月29日漂移狂欢节</h4>
+  <p class="welfare-intro">4月29日，QQ飞车手游超强福利，史无前例！海量福利游戏中等你来领！点击查看福利详情。</p>
+  <a href="//speedm.qq.com/cp/a20180412qqfcm/index1.html" class="welfare-btn" ontouchend="PTTSendClick('welfare','more-welfare','更多福利');">4.29 福利狂欢</a>
+</section>
+
+<!-- 主播 -->
+<section class="anchor">
+  <h3 class="anchor-title">本期主播</h3>
+  <ul class="anchor-list">
+    <li>
+      <div>
+        <i class="anchor-circle"></i>
+        <img src="ossweb-img/avator1.jpg" alt="袁嘉艺">
+      </div>
+      <strong>袁嘉艺</strong>
+      <p>《QQ飞车手游》官方解说。实力与颜值兼具的侗族形象大使。</p>
+    </li>
+    <li>
+      <div>
+        <i class="anchor-circle"></i>
+        <img src="ossweb-img/avator2.jpg" alt="鹏弟">
+      </div>
+      <strong>鹏弟</strong>
+      <p>QQ飞车手游TOP1主播。超神操作又不失幽默风趣，机智表弟带你掌控全场。</p>
+    </li>
+  </ul>
+</section>
+
+<!-- 资讯 -->
+<section class="news">
+  <h3 class="news-title">最新资讯</h3>
+  <!-- 资讯广告图 -->
+  <div class="news-ads swiper-container">
+    <ul class="news-ads-wrap swiper-wrapper">
+      <li class="swiper-slide"><a href="javascript:;"><img src="ossweb-img/ads-img1.jpg" alt="ad1"></a></li>
+      <li class="swiper-slide"><a href="javascript:;"><img src="ossweb-img/ads-img2.jpg" alt="ad2"></a></li>
+      <li class="swiper-slide"><a href="javascript:;"><img src="ossweb-img/ads-img3.jpg" alt="ad3"></a></li>
+      <li class="swiper-slide"><a href="javascript:;"><img src="ossweb-img/ads-img4.jpg" alt="ad4"></a></li>
+      <li class="swiper-slide"><a href="javascript:;"><img src="ossweb-img/ads-img5.jpg" alt="ad5"></a></li>
+    </ul>
+    <ul class="news-ads-pagination pagination"></ul>
+  </div>
+  <!-- 资讯新闻 -->
+  <ul class="news-list">
+    <li><a href="http://speedm.qq.com/webplat/info/news_version3/28528/28529/28530/m19806/201804/711876.shtml">新版本爆料 | 第1弹：街区车王新玩法登场！</a><span>03/19</span></li>
+    <li><a href="http://speedm.qq.com/webplat/info/news_version3/28528/28529/28530/m19806/201804/712249.shtml">新版本爆料 | 第2弹：萌宠来袭</a><span>03/19</span></li>
+    <li><a href="http://speedm.qq.com/webplat/info/news_version3/28528/28529/28530/m19806/201804/712468.shtml">新版本爆料 | 第3弹：海量贴心优化来袭</a><span>03/19</span></li>
+    <li><a href="http://speedm.qq.com/webplat/info/news_version3/28528/28529/28530/m19806/201804/712794.shtml">新版本爆料 | 第4弹：全新赛道冰爽登场</a><span>03/19</span></li>
+  </ul>
+</section>
+
+<!-- 合作伙伴 -->
+<section class="partner">
+  <h3 class="partner-title">合作伙伴</h3>
+  <ul class="partner-list">
+    <li><img src="ossweb-img/partner1.png" alt=""></li>
+  </ul>
+</section>
+
+<script src='//apps.game.qq.com/CommArticle/app/reg/gdate.php'></script>
+<script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
+<script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script src="//vm.gtimg.cn/tencentvideo/txvlive/2017/txvlive.js"></script>
+
+<!--通用统计代码-->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<!--IEG通用底部-->
+<script id="afooter" src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+ siteType:"a20180424livem", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+ pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+ pageName:"首页", //必填项:页面中文名
+ osact:1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+ ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+ stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+
+TGMobileShare({
+  shareTitle:'', //不设置或设置为空时，页面有title，则调取title
+  shareDesc:'', //不设置或设置为空时，页面有Description，则调取Description
+  shareImgUrl:'https://game.gtimg.cn/images/speedm/m/m201712/logo.png', //分享图片尺寸200*200，且填写绝对路径
+  shareLink: location.href, //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+  actName:'a20180424livem' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+});
+
+/*轮播*/
+new Swiper('.news-ads', {
+  pagination: '.news-ads-pagination',
+  autoplay: 3000,
+  paginationClickable: true,
+  slideToClickedSlide: true,
+  paginationElement: 'li',
+  effect : 'coverflow',
+  slidesPerView: 3,
+  centeredSlides: true,
+  coverflow: {
+    rotate: 0,
+    stretch: 40,
+    depth: 100,
+    modifier: 2,
+    slideShadows : true,
+  },
+  autoplayDisableOnInteraction : false,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 'auto',
+  grabCursor: false
+})
+
+/*直播*/
+var live = (function() {
+  var config = {
+    containerId: 'live-video',
+    vid: '123445401',
+    livepid: '',
+    width: '670',
+    height: '377',
+    autoplay: true
+  };
+  
+  // 视频播放
+  var play = function() {
+    var player = new TxvLive(config);
+    player.on('ready', function () {
+      //准备完成开始播放
+      $('.live-play').hide();
+    });
+  }
+
+  // 点击播放
+  $('.live-play').on('tap', function() {
+    play();
+  })
+
+  // 显示直播模块并播放
+  var show = function() {
+    $('.live').show();
+    play();
+    console.log('live start')
+  }
+
+  return {
+    play: play,
+    show: show
+  }
+})()
+
+// 倒计时
+function countDown(t,e){function n(){var t,e,a,r,s,c;return e=+new Date+o.gap,t=Math.floor((o.ttime-e)/1e3),0>=t?(t=0,clearTimeout(o.timer),i(["00","00","00","00"],o.el,o.id,o.nani),void o.done()):(a=t%60,t=(t-a)/60,r=t%60,t=(t-r)/60,s=t%24,t=(t-s)/24,c=t,i([c,s,r,a],o.el,o.id,o.nani),void(o.timer=setTimeout(n,1e3)))}function i(t,e,n,i){for(var s=0;s<t.length;s++)t[s]=""+t[s],1==t[s].length&&(t[s]="0"+t[s]);0!==o.lastTs?r(t,o.lastTs,n,i):a(e,t,n,o.sp),o.lastTs=t}function a(t,e,n,i){for(var a=e.length,r="",o=0;a>o;o++){e[o]=e[o].split("");for(var s=0;s<e[o].length;s++)r+='<span id="'+n+"P"+(o+1)+"_"+s+'" class="'+n+"_p "+n+"_p"+(o+1)+"_"+s+" "+n+"_n"+e[o][s]+'">'+e[o][s]+"</span>";r+='<span class="'+n+"_s "+n+"_"+o+'">'+i[o]+"</span>"}t.innerHTML=r}function r(t,e,n,i){for(var a=0;a<t.length;a++)if(t[a]!==e[a]){t[a]=t[a].split("");for(var r=0;r<t[a].length;r++)if(t[a][r]!==e[a][r]){var o=document.getElementById(n+"P"+(a+1)+"_"+r);o.className=n+"_p "+n+"_p"+(a+1)+"_"+r+" "+n+"_n"+t[a][r]+" "+i,o.innerHTML=t[a][r],o.addEventListener&&o.addEventListener("webkitAnimationEnd",function(){this.classList.remove(i)},!1)}}}var o={nani:"nani",sp:[":",":",":",""],id:t,el:document.getElementById(t),gap:0,lastTs:0,ttime:0,timer:null,done:function(){console.log('dasdas')}};for(p in e)o[p]=e[p];if(void 0!==o.ttime)return o.play=function(){n()},o.pause=function(){clearTimeout(o.timer)},o.play(),o}function getServerTime(){var t,e,n="//"+window.location.hostname+"/favicon.ico?t="+Math.random();try{t=new XMLHttpRequest}catch(i){try{t=new ActiveXObject("Msxml2.XMLHTTP")}catch(i){try{t=new ActiveXObject("Microsoft.XMLHTTP")}catch(i){t=null}}}try{t.open("HEAD",n,!1),t.send()}catch(i){return{stime:new Date,stgap:0}}return e=new Date(t.getResponseHeader("Date")),{stime:e,stgap:e.getTime()-+new Date}}
+//通过gdate.php获取本地与服务器时间差gap
+var _gapTime = typeof(json_curdate)!=="undefined" ? +new Date(json_curdate.replace(/-/g,"/"))-(+new Date()) : 0;
+var ctimer = new countDown("ctime",{ ttime:+new Date(2018,03,28,18,00,00), gap:_gapTime, sp:["DAYS","HOURS","MINUTES","SECONDS"], done: function() {
+  live.show()
+}})
+
+</script>
+</body>
+</html>

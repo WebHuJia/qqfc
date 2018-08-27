@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-Tgideas">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ飞车》端游是腾讯首款在线突破300万的自研大作，迄今累计超过4.5亿注册用户。两年来，《QQ飞车》端游研发团队成功让《QQ飞车》手游完美还原了端游的大部分操作技巧，上手容易之余，同时又有足够的操作深度，力求给玩家提供一个原汁原味却又充满诚意的飞车手游！" />
+    <meta name="Keywords" content="QQ飞车手游,飞车手游,QQspeed,QQ飞车手游预约，QQ飞车预约不删档，QQ飞车手游不删档，预约, QQ飞车手游,飞车手游,不删档，QQspeedm,speedm，QQ飞车手游预约，QQ飞车预约不删档，QQ飞车手游不删档，QQ飞车不删档福利，赛车游戏,赛车,漂移，指尖漂移，卡丁车,休闲区,同城交友,跑跑,跑跑卡丁车,最好玩,时尚赛车,剃刀,针尖,针尖杯,腾讯游戏,QQ游戏,SSC超级联赛" />
+    <title>七夕邂逅-QQ飞车手游-腾讯游戏</title>
+    <!-- 页面设计：微聚cp | 页面制作：微聚cp | 创建：2018-07-30 -->
+    <script>
+        (function (win,doc){
+            if (!win.addEventListener) return;
+            var html=document.documentElement;
+            function setFont()
+            {
+                var cliWidth=html.clientWidth;
+                html.style.fontSize=100*(cliWidth/750)+'px';
+            }
+            win.addEventListener('resize',setFont,false);
+            setFont();
+        })(window,document);
+    </script>	
+	<script type="text/javascript" src="https://img.ssl.msdk.qq.com/wiki/msdkJsAdapter.js"></script>
+    <style>
+        /* reset */
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+        details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+        table{border-collapse:collapse;border-spacing:0}
+        audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+        fieldset,img{border:0}
+        address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+        ol,ul{list-style:none}
+        a{text-decoration: none;outline: none;-webkit-tap-highlight-color:transparent;}
+        caption,th{text-align:left}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        q:before,q:after{content:''}
+        abbr,acronym{border:0;font-variant:normal}
+        sup{vertical-align:text-top}
+        sub{vertical-align:text-bottom}
+        .fl{float: left;}
+        .fr{float: right;}
+        input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+        input,textarea,select{*font-size:100%}
+        /* main */
+        html {font-size: 100px;}
+        body {font: .22rem '\5FAE\8F6F\96C5\9ED1';padding-top: 1.2rem}
+        .hide{display: none;}
+        .spr{background-image: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/spr.png);background-repeat: no-repeat;background-size: 10.02rem 4.82rem}
+        /* head */
+        header {width: 100%;height: 1.2rem;background: #201f1f;position: fixed;left: 0;top: 0;z-index: 10}
+        header h1 {float: left;color: white;position: relative;padding-left: 1.02rem;margin: .21rem 0 0 .4rem}
+        header h1 a{position: absolute;left: 0;top: 0;display: block;width: .8rem;height: .8rem;}
+        header h1 img {width: .8rem;height: .8rem}
+        header strong {display: block;font-weight: bold;font-size: .29rem;line-height: 1.7;}
+        header i {font-style: normal;font-size: .25rem}
+        header .head-download {float: right;display: block;width: 1.76rem;height: .58rem;line-height: .58rem;margin: .3rem .36rem 0 0;font-weight: bold;color: #690505;text-align: center;background: #efc939;font-size: .24rem;}
+        .kv{width: 100%;height:6.14rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/kv.jpg) no-repeat center/cover;}
+        .kv h1{text-indent: -9999rem;}
+        .kv .time{font-size: .22rem;color: #4f2187;text-align: center;margin-top: .53rem;}
+        .content{width: 100%;height:23.39rem;background:url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/content.jpg) no-repeat center/cover;}
+        .content .ness{box-sizing: border-box;padding-left:2.29rem;}
+        .ness li{display: inline-block;width:1.15rem;height:1.15rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/yuan.png) no-repeat center/cover;position: relative;text-align: center;font-size: .18rem;color: #fff0fd;margin-right: .53rem;}
+        .ness li:nth-child(1){top: .1rem;}
+        .ness li:nth-child(2){top: .3rem;left: -.1rem;}
+        .ness li:nth-child(3){left: -.1rem;}
+        .ness li img{display:block;width: .85rem;height: .85rem;margin: .15rem auto;}
+        .complete{width:6.95rem;height: 3.9rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/envelopes-bg.png) no-repeat center/cover;margin:.5rem auto 0;text-align: center;overflow: hidden;}
+        .complete p.day{font-size:.24rem;color: #eacaff;margin-top: .2rem;line-height: 1.5;}
+        .envelopes{width:6.43rem;height: auto;margin: .25rem auto 0;}
+        .envelopes li{display: block;width: 100%;height:.7rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/envelopes-li.png) no-repeat center/cover;line-height: .7rem;box-sizing:border-box;padding: 0 .15rem 0 .2rem;position: relative;margin-bottom: .2rem;}
+        .envelopes li p{font-size: .22rem;color: #2f1075;}
+        /*.envelopes li:nth-child(3){line-height: 1;}*/
+        /*.envelopes li:nth-child(3) p{line-height: 1.2;margin-top: .09rem;}*/
+        /*.envelopes li:nth-child(3) span{line-height:.7rem;}*/
+        .envelopes li span{position: absolute;right: 2.17rem;font-size: .24rem;color: #39107d;}
+        .envelopes li span em{position: absolute;width: .86rem;height: .76rem;background-position:-.1rem -3.96rem;left: -1rem;top: -.09rem;}
+        .envelopes li a{width:1.27rem;height:.52rem;background-position:-.1rem -3.24rem;text-indent: -9999rem;margin-top: .09rem;}
+        .envelopes li a.on{background-position: -1.57rem -3.24rem;}
+        h2.xh{width: 5.49rem;height:.43rem;margin: 1.2rem auto 0;background-position:-4.43rem -.1rem;text-indent: -9999rem;}
+        .track{width:6.92rem;height: auto;margin: .18rem auto 0;display: flex;justify-content: space-between;flex-wrap: wrap;}
+        .track li{position: relative;width: 2.2rem;height: 1.74rem;box-sizing: border-box;border: .03rem solid #d787e0;margin-bottom: .2rem;}
+        .track li img{display: block;width:2.14rem;height:1.68rem;}
+        .track li span{position: absolute;left: 0;bottom: 0;width:2.17rem;height:.43rem;font-size:.22rem;color: #c62e7c;text-align: center;line-height: .43rem;background-position: -3.8rem -2.38rem;}
+        P.today{font-size:.24rem;color: #5e3d92;text-align: center;line-height: 1;}
+        P.today em{position: relative;display: inline-block; width:.49rem;height:.42rem;background-position:-9.19rem -.73rem;top: .14rem;}
+        P.today i{display: inline-block;font-style: normal; font-size:.26rem;color: #ed3f83;font-weight: bold;margin: 0 .05rem;}
+        P.today a{display: inline-block; width:1.14rem;height:.47rem;text-indent: -9999rem;background-position: -3.04rem -3.24rem;position: relative;left: .1rem;top: -.1rem;}
+        .box-cut{width:6.89rem;height:3.89rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/switchover.png) no-repeat center/cover;margin: .15rem auto 0;overflow: hidden;position: relative;}
+        .box-cut img{display: block; width:6.7rem;height:3.68rem;margin: .1rem auto;}
+        .box-cut .mask{position: absolute;width:6.74rem;height:3.72rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/mask.png) no-repeat center/cover;top: .1rem;left:.1rem;visibility: hidden;z-index: 2;}
+        .box-cut .ts{position: absolute;width: 100%;height:.62rem;text-align: center;line-height: .62rem;font-size: .24rem;color: #342290;left:0;bottom: .1rem;z-index:3;visibility: hidden;}
+        /*今日信封使用*/
+        .route{position: absolute;width:6.13rem;height:1.28rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/lu.png) no-repeat center/cover;left: .46rem;bottom: .94rem;visibility: hidden;z-index: 3;}
+        .route li{position: absolute;width:.48rem;height: .61rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/box-s.png) no-repeat center/cover;transition: all .3s;}
+        .route li.none{visibility: hidden;}
+        .route .list-1.gir,.route .list-1.boy{width: .85rem;height: 1.23rem;left:-.25rem;bottom: .3rem;}
+        .route .list-1.gir{background:url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/xjz.png) no-repeat center/cover;}
+        .route .list-1.boy{background:url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/byt.png) no-repeat center/cover;}
+        .route .list-2{left: .7rem;bottom: .1rem;}
+        .route .list-3{left: 1.7rem;bottom: .5rem;}
+        .route .list-4{left: 2.6rem;bottom: .3rem;}
+        .route .list-5{left: 3.55rem;bottom: .8rem;}
+        .route .list-6{left: 4.5rem;bottom: .5rem;}
+        .route .list-7{left: 5.5rem;bottom: 1rem;width:.7rem;height:.87rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/box-b.png) no-repeat center/cover;}
+
+        h2.yl{width:2.88rem;height:.43rem;background-position:-.1rem -1.75rem;margin:.85rem auto 0;text-indent: -9999rem;}
+        .reward{width:6.92rem;margin: .13rem auto 0;display: flex;justify-content: space-between;flex-wrap: wrap;}
+        .reward li.li{width:3.34rem;height:2.44rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/view-1.jpg) no-repeat center/cover;margin-bottom: .26rem;position: relative;}
+        .reward li.li span{position: absolute;left: 0;bottom: 0;width:3.34rem;height:.63rem;text-align: center;line-height: .63rem;font-size: .24rem;color: #fff;}
+        .reward li:nth-child(3){width:6.85rem;height:2.44rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/view-2.jpg) no-repeat center/cover;}
+        .reward li:nth-child(3) .lists{width: 100%;display: flex;justify-content: space-between;box-sizing: border-box;padding: .22rem .82rem 0;}
+        .reward li:nth-child(3) span{position: absolute;left: 0;bottom: 0;width:100%;height: .62rem;text-align: center;line-height: .62rem;font-size: .24rem;color: #fff;}
+        .reward .lists{width: 100%;display: flex;justify-content: space-between;box-sizing: border-box;padding: .27rem .35rem 0;}
+        .reward .lists li{width:1.15rem;height:1.15rem;text-align: center;font-size: .18rem;color: #fff0fd;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/yuan.png) no-repeat center/cover;}
+        .reward .lists li img{width: .85rem;height:.85rem;display: block;  margin: .15rem auto;}
+        /*弹窗*/
+        .fix-img{position: fixed;top:0;left:0;width: 100%;height:100%;background: rgba(0,0,0,.8);z-index: 99;display: none;}
+        .pop{position: fixed;top: 0;left: 0;right: 0;bottom: 0;margin: auto;padding-top:.76rem;box-sizing: border-box;z-index: 100;display: none;}
+        .pop span.close{position: absolute;right:.05rem;top: .8rem;width: 1rem;height: 1rem;text-indent: -9999rem;}
+        .po-1{width:4.82rem;height:2.45rem;background:url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/po-1.png) no-repeat center/cover;}
+        .po-1 p{text-align: center;font-size: .24rem;color: #7a2a95;margin-top: .55rem;}
+        .po-2,.po-4{width:5.66rem;height:6.26rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/po-2.png) no-repeat center/cover;}
+        .po-2 h4{text-align: center;font-size:.24rem;color:#7a2a95;margin-top: .5rem;}
+        .po-2 .img-box{width:4.56rem;margin: .5rem auto 0;border-radius: .1rem;border: .02rem solid #ce9ee9;position: relative;}
+        .po-2 img{width:4.56rem;height: 2.78rem;display: block;border-radius: .1rem;}
+        .po-2 .img-box span{position: absolute;width:4.56rem;height:.53rem;background-position:-4.43rem -.73rem;font-size:.24rem;color: #d82063;text-align: center;line-height:.53rem;left: 0;bottom: 0;}
+        .po-2 .center{text-align: center;margin-top: .33rem;}
+        .po-2 .center a{display: inline-block;width:1.65rem;height:.66rem;background-position:-1.95rem -2.38rem;text-indent: -9999rem;margin: 0 .2rem;}
+        .po-2 .center a:nth-child(2){background-position:-.1rem -2.38rem;}
+        .po-3{width: 5.66rem;height: 6.8rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/po-3.png) no-repeat center/cover;}
+        .po-3 h4{text-indent: -9999rem;width: 2.88rem;height: .37rem;margin: .4rem auto 0;background-position:-3.18rem -1.75rem;}
+        .po-3 .person{display: block; width: 4.13rem;height: 1.45rem;background-position:-.1rem -.1rem;margin: .48rem auto 0;}
+        .po-3 .red{text-align: center;font-size:.2rem;color: #c73384;margin-top: .13rem;padding-bottom: .3rem;}
+        .po-3 .red:after{position: relative;display: block;content: "";width:4rem;height: .06rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/daoju.png) no-repeat center/cover;margin: 0 auto;bottom: -.3rem;}
+        .po-3 .blue{text-align: center;font-size: .2rem;color: #7a2a95;margin-top: .1rem;}
+        .po-3 .g-list{width: 100%;height: auto;box-sizing: border-box;display: flex;justify-content: space-between;padding:.22rem .75rem;}
+        .po-3 .g-list li{width:1.15rem;height:1.15rem;text-align: center;font-size:.18rem;color: #603f90;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/yuan.png) no-repeat center/cover;}
+        .po-3 .g-list li img{display:block;width:.85rem;height: .85rem;margin: .15rem auto;}
+        .po-4{box-sizing: border-box;padding:1.8rem .35rem 0;}
+        .po-4  a.qd{display: block;width:1.65rem;height:.66rem;text-indent: -9999rem;background-position: -1.95rem -2.38rem;margin: .5rem auto 0;}
+        .po-4 select{-webkit-appearance: none;outline: none;border: none;font-size: .24rem;color: #7a2a95;box-sizing: border-box;padding-left: .2rem;}
+        .po-4 .sec-1{width:4.99rem;height:.58rem;background: url(//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/seclect.png) no-repeat center/cover;margin-bottom: .1rem;}
+         /*公共底部*/
+        .foot{background-color: #281545;padding: .2rem 0;font-size: .22rem;color: #7a5fa2;text-align: center;line-height: 1.5;}
+    </style>
+	<script src="//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
+</head>
+<body>
+<div id="autots"></div>
+<header>
+    <h1><a ontouchend="PTTSendClick('header','qqfc','QQ飞车手游');" href="/m/main.shtml"><img src="//game.gtimg.cn/images/speedm/m/m201712/logo.png" alt=""></a><strong>QQ飞车手游</strong><i>唯一官方正版手游</i></h1>
+    <a ontouchend="PTTSendClick('header','download','立即下载');" href="//speedm.qq.com/m/main.shtml" class="head-download">进入官网</a>
+</header>
+<div class="kv">
+    <h1>鹊桥邂逅有礼</h1>
+    <p class="time">2018.08.23--2018.08.31</p>
+</div>
+<div class="content">
+    <ul class="ness">
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/dq.png" alt="">点券*28</li>
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/kjd.png" alt="">科技点*30</li>
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/xyb.png" alt="">许愿银币*1</li>
+    </ul>
+    <div class="complete">
+        <p class="day">每日自有信笺*1，完成以下任务再得信笺<br>使用信笺将前进一步，并获得相应奖励</p>
+        <ul class="envelopes">
+            <li><p class="fl">分享给小伙伴</p><span><em class="spr"></em>*1</span><a href="javascript:shareBack();" id="fxiang" ontouchend="PTTSendClick('envelopes','qwc1','去完成');" class="spr fr">去完成</a></li>
+            <li><p class="fl">参与一局排位赛</p><span><em class="spr"></em>*1</span><a href="javascript:;" id="pwei" ontouchend="PTTSendClick('envelopes','qwc2','去完成');" class="spr fr">去完成</a></li>
+            <li><p class="fl">参与一局邂逅赛</p><span><em class="spr"></em>*1</span><a href="javascript:;" id="xhou" ontouchend="PTTSendClick('envelopes','qwc3','去完成');" class="spr fr">去完成</a></li>
+        </ul>
+    </div>
+    <h2 class="xh spr">选择喜欢的赛道去邂逅吧</h2>
+    <ul class="track">
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/1.jpg" alt=""><span class="spr">我们恋爱吧</span></li>
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/2.jpg" alt=""><span class="spr">星星火车站</span></li>
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/3.png" alt=""><span class="spr">广寒仙境</span></li>
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/4.png" alt=""><span class="spr">西湖</span></li>
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/5.png" alt=""><span class="spr">玫瑰之恋</span></li>
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/6.png" alt=""><span class="spr">糖果乐园</span></li>
+    </ul>
+    <p class="today"><em class="spr"></em>今日我还有<i id="letterNum">0</i>封信笺<a href="javascript:;" ontouchend="PTTSendClick('today','use','使用');" class="spr use">使用</a></p>
+    <div class="box-cut">
+        <img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/0.jpg" alt="">
+        <ul class="route">
+            <li class="list-1"></li>
+            <li class="list-2"></li>
+            <li class="list-3"></li>
+            <li class="list-4"></li>
+            <li class="list-5"></li>
+            <li class="list-6"></li>
+            <li class="list-7"></li>
+        </ul>
+        <div class="mask"></div>
+        <span class="ts">完成当前赛道的邂逅还可再选择其他赛道进行游戏</span>
+    </div>
+    <h2 class="yl spr">奖励一览</h2>
+    <ul class="reward">
+        <li class="li">
+            <ul class="lists">
+                <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/dq.png" alt="">点券*10</li>
+                <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/nl.png" alt="">迷你能量体*1</li>
+            </ul>
+            <span>前进1-3步 每步随机可得</span>
+        </li>
+        <li class="li">
+            <ul class="lists">
+                <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/nl.png" alt="">迷你能量体*2</li>
+                <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/dq.png" alt="">点券*28</li>
+            </ul>
+            <span>前进4-5步 每步随机可得</span>
+        </li>
+        <li class="li">
+            <ul class="lists">
+                <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/dq.png" alt="">点券*28</li>
+                <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/kjd.png" alt="">科技点*30</li>
+                <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/xyb.png" alt="">许愿银币*1</li>
+            </ul>
+            <span>邂逅成功 可获得</span>
+        </li>
+    </ul>
+</div>
+<!--弹窗-->
+<div class="fix-img"></div>
+<!--已领取-->
+<div class="pop po-1" >
+    <p>奖励已发放至邮箱<br>请注意查收哦~</p>
+    <span class="close">关闭</span>
+</div>
+<!--选择赛道-->
+<div class="pop po-2" >
+    <h4>确认选择该赛道吗</h4>
+    <div class="img-box">
+        <img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/p-1.jpg" alt="">
+        <span class="spr intro">我们恋爱吧</span>
+    </div>
+    <div class="center">
+        <a href="javascript:;" id="trackQd" ontouchend="PTTSendClick('center','qd','确定');" class="spr">确定</a>
+        <a href="javascript:showHid();" ontouchend="PTTSendClick('center','qx','取消');" class="spr">取消</a>
+    </div>
+    <span class="close">关闭</span>
+</div>
+<!--邂逅成功-->
+<div class="pop po-3">
+    <h4 class="spr">邂逅成功</h4>
+    <span class="person spr"></span>
+    <p class="red">鸿雁千里，笺言索引，银汉迢迢皆可渡；<br>金凤玉露一相逢，便胜却人间无数。</p>
+    <p class="blue">奖励已发放至邮箱，注意查收哦</p>
+    <ul class="g-list">
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/dq.png" alt="">点券*28</li>
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/kjd.png" alt="">科技点*30</li>
+        <li><img src="//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/xyb.png" alt="">许愿银币*1</li>
+    </ul>
+    <span class="close">关闭</span>
+</div>
+<!--选择渠道-->
+<div class="pop po-4" >
+    <select class="sec-1" id="channelContentId"><option>请选择渠道</option></select>
+    <select class="sec-1" id="systemContentId"><option>请选择系统</option></select>
+    <select class="sec-1" id="areaContentId"><option>请选择大区</option></select>
+    <select class="sec-1" id="roleContentId"><option>请选择角色</option></select>
+    <a href="javascript:;" ontouchend="PTTSendClick('center','qd','确定');" id="myGiftMainBtn" class="spr qd">确定</a>
+    <span class="close">关闭</span>
+</div>
+
+<!-- 引入移动端JS -->
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"  ></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js" ></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+
+<!--<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>-->
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="js/prompt.js"></script>
+<script>
+    var Autolandacr = new Autolandacr({
+        id: 'autots', //注入父级ID..
+        dir: '1' //填入1\0;  1代表横屏提示.0代表竖屏提示.默认带横竖屏input.空白默认为1
+    })
+</script>
+<script>
+    var arr=[
+        {
+        src:'//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/p-1.jpg',
+        intro:'我们恋爱吧'
+        },
+        {
+            src:'//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/p-2.jpg',
+            intro:'星星火车站'
+        },
+        {
+            src:'//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/p-3.jpg',
+            intro:'广寒仙境'
+        },
+        {
+            src:'//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/p-4.jpg',
+            intro:'西湖'
+        },
+        {
+            src:'//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/p-5.jpg',
+            intro:'玫瑰之恋'
+        },
+        {
+            src:'//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/p-6.jpg',
+            intro:'糖果乐园'
+        },
+    ]
+	/*
+    function showImg(num) {
+        var imgHTML = '<h4>确认选择该赛道吗</h4>\n' +
+            '    <div class="img-box">\n' +
+            '        <img src="'+arr[num].src+'" alt="">\n' +
+            '        <span class="spr intro">'+arr[num].intro+'</span>\n' +
+            '    </div>\n' +
+            '    <div class="center">\n' +
+            '        <a href="javascript:;" id="trackQd" ontouchend="PTTSendClick(\'center\',\'qd\',\'确定\');" class="spr qd">确定</a>\n' +
+            '        <a href="javascript:showHid();" ontouchend="PTTSendClick(\'center\',\'qx\',\'取消\');" class="spr qx">取消</a>\n' +
+            '    </div>\n' +
+            '    <span class="close">关闭</span>'
+        $('.po-2').html(imgHTML)
+    }
+	*/
+    //调用弹窗
+    function showDia(val) {
+        $(".fix-img").show();
+        $('.'+val).show();
+    }
+//    关闭弹窗
+    function showHid() {
+        $('.pop').hide()
+        $('.fix-img').hide()
+    }
+
+    var _index={}
+    var sex=0   // 1:男  0:女
+    var step=0  //当前第几步
+    var flag = false; //按钮能否点击
+    $(".track li").each(function () {
+        $(this).on("click",function () {
+           _index = $(this).index();
+            $(".fix-img").show();
+            $('.po-2').show();
+			$(".img-box img").attr("src" , arr[_index].src);
+			$(".img-box span").text(arr[_index].intro);
+            //showImg(_index);
+        })
+    })
+	
+	/*
+    $(".pop").on("click","span",function () {
+        showHid()
+        flag = true;
+    })
+	*/
+	$(".close").on('click' ,function(){
+		showHid();
+	});
+
+//判断玩家性别
+    if(sex==1){
+        $(".route .list-1").removeClass("gir")
+        $(".route .list-1").addClass("boy")
+    }
+    else {
+        $(".route .list-1").removeClass("boy")
+        $(".route .list-1").addClass("gir")
+    }
+
+//    重置地图
+    function resetMap() {
+        step=0;
+        changeProgr(step);
+        $(".route li").removeClass("none");
+    }
+//    人物前进
+    function changeProgr(step) {
+        switch (step){
+            case 0:
+                $(".list-1").css({"left":"-.25rem","bottom":".3rem"})
+                break;
+            case 1:
+                $(".list-1").css({"left":".5rem","bottom":".1rem"});
+                
+				for(var i = 2; i <= 2; i++){
+					$(".route .list-"+i).addClass("none");
+				}        
+                break;
+            case 2:
+                $(".list-1").css({"left":"1.5rem","bottom":".55rem"})
+                for(var i = 2; i <= 3; i++){
+					$(".route .list-"+i).addClass("none");
+				}
+                break;
+            case 3:
+                $(".list-1").css({"left":"2.45rem","bottom":".35rem"})
+                for(var i = 2; i <= 4; i++){
+					$(".route .list-"+i).addClass("none");
+				}
+                break;
+            case 4:
+                $(".list-1").css({"left":"3.4rem","bottom":".8rem"})
+                for(var i = 2; i <= 5; i++){
+					$(".route .list-"+i).addClass("none");
+				}
+                break;
+            case 5:
+                $(".list-1").css({"left":"4.3rem","bottom":".55rem"})
+                for(var i = 2; i <= 6; i++){
+					$(".route .list-"+i).addClass("none");
+				}
+                break;
+            case 6:
+                $(".list-1").css({"left":"5.4rem","bottom":"1.15rem"})
+                for(var i = 2; i <= 7; i++){
+					$(".route .list-"+i).addClass("none");
+				}
+                break;
+
+        }
+    }
+	
+/******* v_wchaowang start ***************************/
+
+	var appid = milo.request("appid"); 
+	var sServiceType = 'speedm';
+	var btnFlag = 0;
+	var sPlatId = milo.request("plat");	
+	
+    var sArea = milo.request("areaId");
+	
+	if(sArea == '' || sArea == null || sArea == undefined || sArea == 'undefined'){
+		sArea = milo.request("areaid");
+	}	
+	
+	var sPartition = milo.request("partition");
+	var sRoleId = milo.request("roleid");
+	
+	var isLogin = false, isBind = false;
+	var sData = {};
+
+	var btn_flag = 0;
+	var isInit = 0;
+
+	var ua = window.navigator.userAgent.toLowerCase();
+	var UA = navigator.userAgent;
+    var REGEXP_IOS_QQ = /(iPad|iPhone|iPod).*? QQ\/([\d\.]+)/;
+    var REGEXP_ANDROID_QQ = /\bV1_AND_SQI?_([\d\.]+)(.*? QQ\/([\d\.]+))?/;
+
+    //判断微信客户端
+    function isWeiXin(){
+        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    //判断QQ客户端
+    function isQQ(){
+        var chkRes = false;
+        mqq.device.isMobileQQ(function(result){
+            chkRes = result;
+        });
+        return chkRes;
+    }
+	
+	//判断IOS
+	function isIos(){
+		return /iphone|ipod|ipad/i.test(ua);
+	}
+	//判断安卓
+	function isAndroid(){
+		return /android/i.test(ua);
+	}
+	
+	function isMSDK(){
+		return /msdk/i.test(window.navigator.userAgent.toLowerCase());
+	}
+	
+	if(sPlatId == '' || sPlatId == null || sPlatId == undefined || sPlatId == 'undefined'){
+		sPlatId = milo.request("platid");
+		if(sPlatId == '' || sPlatId == null || sPlatId == undefined || sPlatId == 'undefined'){
+			sPlatId = isIos() ? '0' : (isAndroid() ? '1' : '');
+		}
+	}
+	
+	var ismsdk = false;
+	if(isMSDK()){
+        ismsdk = true;
+    }
+	if(isIos()){ //ios游戏内无法使用isMSDK()
+        if(isWeiXin() && isQQ()){
+            ismsdk = false;
+        }else{
+            var msdkParam = milo.request('msdkEncodeParam');
+            if(msdkParam != '' && typeof(msdkParam) != 'undefined' && msdkParam !== null){
+                ismsdk = true;
+            }
+        }
+    }
+	if (ismsdk==false){
+		window.location.href = window.location.protocol + '//speedm.qq.com/cp/a20180730qxxhm/index_wq.html';
+	}else{	
+		milo.ready(function(){		
+			//判断登录
+			need('biz.login', function (LoginManager) {
+				LoginManager.checkLogin(function (userinfo ) {
+					if(appid == '' || appid == null || appid == undefined || appid == 'undefined'){
+						alert('网络波动，您的登录态已失效，请重新从游戏内打开。');
+						return;
+					}
+					isLogin = true;
+					isBind = true;
+					// 已登录
+					sData = {
+						"appid" : appid,
+						"sArea" : sArea,
+						"sPlatId" : sPlatId,
+						"sPartition" : sPartition,
+						"sRoleId" : sRoleId,
+						"sServiceType" : "speedm"				
+					}
+					amsCfg_487643.sData = sData; 
+					amsCfg_488635.sData = sData; 
+					amsCfg_488636.sData = sData; 
+					amsCfg_488637.sData = sData; 
+					amsCfg_488638.sData = sData; 
+					amsCfg_488639.sData = sData; 
+					amsCfg_487979.sData = sData;
+					
+					amsSubmit(156820,487979);
+					
+				}, function () {
+					alert('网络波动，您的登录态已失效，请重新从游戏内打开。');
+				});
+			});
+		});
+		
+		var isShare = 0, isPwei = 0, isXhou = 0, letterNum = 0 ,paceNum = 0 ,trackNum = 0, isGift = 0, isSelTrack = 0;	
+		// 初始化请求
+		amsCfg_487979 = {
+			"iActivityId": 156820, //活动id	
+			"iFlowId":    487979, //流程id
+			"sData":{},
+			"fFlowSubmitEnd": function(res){
+				isInit = 1;
+				console.log(JSON.stringify(res));
+				
+				letterNum = parseInt(res.sOutValue1);
+				paceNum = parseInt(res.sOutValue2);
+				
+				var str = res.sOutValue3;
+				str = str.split(',');
+				isPwei = str[1];
+				isXhou = str[2];
+				trackNum = parseInt(res.sOutValue4);
+				if(trackNum >= 0){
+					$(".box-cut img").attr('src','//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/0'+trackNum+'.jpg');
+					$(".route").css("visibility","visible");
+					$(".mask").css("visibility","visible");
+					$(".ts").css("visibility","visible");
+				}
+				
+				
+				isShare = res.sOutValue5;
+				isGift = parseInt(res.sOutValue6);
+				
+				isSelTrack = parseInt(res.sOutValue7);
+				
+				if(isGift > 0){
+					changeProgr(6);
+				}else{
+					changeProgr(paceNum);
+				}
+				
+				if(isShare != '0'){
+					$("#fxiang").addClass('on');
+				}
+				if(isPwei != '0'){
+					$("#pwei").addClass('on');
+				}
+				if(isXhou != '0'){
+					$("#xhou").addClass('on');
+				}
+				
+				$("#letterNum").text(letterNum);
+				
+				return;
+			},
+			"fFlowSubmitFailed":function(res){
+				//失败会走到这个函数
+				//条件不满足，ame返回大于0是后走到这里
+				alert(res.sMsg);
+			}
+		};
+		
+		// 选择赛道
+		$('#trackQd').on('click',function () {
+			if(isLogin != true){
+				alert('网络波动，您的登录态已失效，请重新从游戏内打开。');
+				return;
+			}else{
+				if(isBind != true){
+					alert('网络波动，您的登录态已失效，请重新从游戏内打开。');
+					return;
+				}else if(paceNum == 0){
+					if(isSelTrack == 0){
+						if(isGift > 0){
+							alert('您今日已跑完一个赛道啦，请明日再来开启新赛道~！');
+						}else{
+							amsCfg_489055.sData = sData;
+							amsCfg_489055.sData.trackNum = _index;
+							amsSubmit(156820,489055);
+						}
+					}else{
+						alert('您今日已选择过赛道哦！');
+					}				
+				}else{
+					if(isGift > 0){
+						alert('您今日已跑完一个赛道啦，请明日再来开启新赛道~！');
+					}else{
+						alert('先完成当前赛道的邂逅才能选择其他赛道哦~');
+					}
+				}
+			}
+		})
+		
+		// 保存赛道信息
+		amsCfg_489055 = {
+			"iActivityId": 156820, //活动id	
+			"iFlowId":    489055, //流程id
+			"sData":{}, //流程id
+			"fFlowSubmitEnd": function(res){
+				isSelTrack = 1;
+				console.log(JSON.stringify(res));
+				showHid();
+				resetMap();
+				flag = true;
+				trackNum = _index;
+				$(".box-cut img").attr('src','//game.gtimg.cn/images/speedm/cp/a20180730qxxhm/0'+_index+'.jpg');
+				$(".route").css("visibility","visible");
+				$(".mask").css("visibility","visible");
+				$(".ts").css("visibility","visible");
+				return;
+			},
+			"fFlowSubmitFailed":function(res){
+				//失败会走到这个函数
+				//条件不满足，ame返回大于0是后走到这里
+				if(res.iRet == '600'){
+					isSelTrack = 1;
+				}
+				alert(res.sMsg);
+			}
+		};
+		
+		var amsCfg = {
+			'1':'487643',
+			'2':'488635',
+			'3':'488636',
+			'4':'488637',
+			'5':'488638',
+			'6':'488639'
+		}
+		
+		//点击信封使用
+		$(".use").on('click' ,function(){
+			if(isLogin != true){
+				alert('网络波动，请重新在游戏内参与~！');
+				return;
+			}else{
+				if(isBind != true){
+					alert('网络波动，请重新在游戏内参与~！');
+					return;
+				}else{
+					if(letterNum > 0){
+						if(isGift > 0 || paceNum >= 6){
+							alert('您今日已跑完一个赛道啦，请明日再来~！');
+						}else if(trackNum == '-1'){
+							alert('请先选择赛道');
+						}else{
+							if(btn_flag == 0){
+								btn_flag = 1;
+								amsSubmit(156820,amsCfg[(paceNum + 1)]);	
+							}else{
+								alert('请不用连续点击~！');
+							}
+						}
+					}else{
+						alert('您的信笺数不足，请前往游戏内完成任务后参与哦~！');
+						return;
+					}
+				}
+			}
+			/*
+			if(flag==true){
+				step++;
+				changeProgr(step)
+			}else {
+				alert("请先选择赛道")
+			}
+			*/
+		});
+		
+		// 抽奖领取主功能初始化
+		amsCfg_487643 = amsCfg_488635 = amsCfg_488636 = amsCfg_488637 = amsCfg_488638 = amsCfg_488639 = {
+			'iAMSActivityId' : '156820', // AMS活动号
+			'activityId' : '216334', // 模块实例号
+			"sData":{},
+			'onBeginGetGiftEvent' : function(){
+				return 0; // 抽奖前事件，返回0表示成功
+			},
+			'onGetGiftFailureEvent' : function(callbackObj){// 抽奖失败事件
+				btn_flag = 0;
+				alert(callbackObj.sMsg);
+			},
+			'onGetGiftSuccessEvent' : function(callbackObj){// 抽奖成功事件
+				btn_flag = 0;
+				paceNum = paceNum + 1;
+				
+				if(paceNum >= 6){
+					isGift = 1;
+					paceNum = 6;
+				}
+				
+				//使用信笺前进
+				letterNum = letterNum - 1;
+				$("#letterNum").text(letterNum);
+				
+				//step++;
+				changeProgr(paceNum);			
+				
+				if(callbackObj.iPackageId == '931980'){
+					setTimeout(function () {
+						showDia('po-3');
+					}, 800)
+				}else{
+					setTimeout(function () {
+						showDia('po-1');
+					}, 800)
+				}
+				return;
+			}
+		};
+		
+		// 分享增加信笺
+		amsCfg_488473 = {
+			"iActivityId": 156820, //活动id	
+			"iFlowId":    488473, //流程id
+			"sData":{},
+			"fFlowSubmitEnd": function(res){
+				isShare = '1';
+				
+				setTimeout(function () {
+					letterNum = letterNum + 1;
+					$("#letterNum").text(letterNum);
+					
+					$("#fxiang").addClass('on');
+				}, 2000)
+				
+
+				return;
+			},
+			"fFlowSubmitFailed":function(res){
+				//失败会走到这个函数
+				//条件不满足，ame返回大于0是后走到这里
+				//alert(res.sMsg);
+			}
+		};
+		
+		// 分享回调函数
+		function shareBack(){
+			alert('快去分享给小伙伴吧~！');
+			if(isLogin == true && isBind == true && isShare == '0'){
+				amsCfg_488473.sData = sData;
+				amsSubmit(156820,488473);
+			}
+		}
+	}
+	
+	$('#pwei,#xhou').on('touchend' ,function(){
+		if(!$(this).hasClass('on')){
+			if(isAndroid()){
+				msdkCloseWebview();
+			}else{
+				alert('快回到游戏内参与吧~！');
+			}
+		}
+	});
+/******* v_wchaowang end ***************************/
+
+</script>
+
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType:"a20180730qxxhm", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "indexgame", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "七夕邂逅", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 1, //选填项:是否需要统计停留时长boolean；默认是0
+        project:"other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>
